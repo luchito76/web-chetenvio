@@ -9,19 +9,21 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Mosh - Creative Business Template | Home</title>
+    <title>Chetenvio | Web</title>
 
     <!-- <link rel="stylesheet" href="css/reset.css"> 
 	<link rel="stylesheet" href="css/style.css">  -->
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="img/logos/favicon.ico">
 
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet">
 
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="fonts/font-awesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
 
 </head>
 
@@ -41,7 +43,7 @@
                         <nav class="navbar h-100 navbar-expand-lg align-items-center">
                             <!-- Logo -->
                             <a class="navbar-brand" href="index.html">
-                                <!-- <img src="img/logos/8.svg" alt="logo"> -->
+                                <img class="logo" src="img/logos/logo.svg" alt="logo">
                             </a>
 
                             <!-- Menu Area -->
@@ -51,7 +53,7 @@
 
                             <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
                                 <ul class="navbar-nav animated" id="nav">
-                                    <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
+                                    <li class="nav-item active"><a class="nav-link" href="#inicio">Inicio</a></li>
                                     <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
@@ -66,11 +68,21 @@
                                             <a class="dropdown-item" href="elements.html">Elements</a>
                                         </div>
                                     </li> -->
-                                    <li class="nav-item"><a class="nav-link" href="about.html">Quienes Somos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="services.html">Servicios</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#nosotros">Quienes Somos
+                                            <!-- uses solid style --></a></li>
+                                    <li class="nav-item"><a class="nav-link smoothScroll"
+                                            href="#servicios">Servicios</a></li>
                                     <!-- <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
-                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                                    <li class="nav-item"><a class="nav-link smoothScroll" href="#areaCobertura">Area
+                                            Cobertura</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link smoothScroll" href="#driver">Driver</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link smoothScroll"
+                                            href="#administracion">Administración</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                                 </ul>
                                 <!-- Search Form Area Start -->
                                 <div class="search-form-area animated">
@@ -87,10 +99,10 @@
                                             alt="Search"></a>
                                 </div>
                                 <!-- Login/Register btn -->
-                                <div class="login-register-btn">
+                                <!-- <div class="login-register-btn">
                                     <a href="#">Login</a>
                                     <a href="#">/ Register</a>
-                                </div>
+                                </div> -->
                             </div>
                         </nav>
                     </div>
@@ -101,21 +113,37 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
-    <section class="welcome_area clearfix" id="home" style="background-image: url(img/bg-img/welcome-bg.png)">
-
+    <!-- <section id="inicio" class="welcome_area clearfix" id="home"
+        style="background-image: url(img/bg-img/welcome-bg.png)">
         <div class="hero-slides owl-carousel">
             <div class="single-hero-slide d-flex align-items-end justify-content-center">
                 <div class="hero-slide-content text-center">
                     <h2>A Clean and Modern Template</h2>
                     <h4>Get your freebie template now!</h4>
-                    <img class="slide-img" src="img/bg-img/cta.jpg" alt="">
+                    <img class="slide-img" src="img/slider/img1.jpg" alt="">
                 </div>
             </div>
             <div class="single-hero-slide d-flex align-items-end justify-content-center">
                 <div class="hero-slide-content text-center">
                     <h2>A Clean and Modern Template</h2>
                     <h4>Get your freebie template now!</h4>
-                    <img class="slide-img" src="img/bg-img/cta-2.jpg" alt="">
+                    <img class="slide-img" src="img/slider/img2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="mosh-subscribe-newsletter-area bg-img  section_padding_300"
+        style="background-image: url(img/slider/img2.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="subscribe-newsletter-content text-center wow fadeIn" data-wow-delay="0.5s">
+                        <h2 class="txt_envio">Seguí tu envío</h2>
+                        <form action="#">
+                            <input type="email" name="email" id="Email" placeholder="Ingresá el código de envío">
+                            <button class="buscar-btn" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,48 +156,41 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center">
-                        <p>Servicios</p>
+                        <!-- <p>Servicios</p> -->
                         <h2>Nuestro servicio es amigable con el medio ambiente</h2>
                     </div>
                     <div class="mosh-service-slides owl-carousel">
                         <!-- Single Service Area -->
                         <div class="single-service-area text-center">
                             <h2>01.</h2>
-                            <h4>Mandanos un Whatsapp!</h4>
-                            <p>Hacé tu pedido por mensaje con los datos de el envío y el servicio que quieras hacer.</p>
+                            <h4>Hacé tu envío</h4>
+                            <p>Mandanos un Whatsapp con los datos de tu envío o hacelo desde la App Mobile.</p>
                         </div>
                         <!-- Single Service Area -->
                         <div class="single-service-area text-center">
                             <h2>02.</h2>
-                            <h4>Pasamos por tu pedido!</h4>
-                            <p>Vamos hasta donde estés a retirar el envío en el horario que elijas.</p>
+                            <h4>Elegí cuando lo querés</h4>
+                            <p>3, 12 o 24Hs. Vamos hasta donde estés en el horario que elijas.</p>
                         </div>
                         <!-- Single Service Area -->
                         <div class="single-service-area text-center">
                             <h2>03.</h2>
-                            <h4>Entregamos el pedido!</h4>
-                            <p>Llevamos tu pedido al lugar indicado con movilidad Ecofrendly.</p>
-                        </div>
-                        <!-- Single Service Area -->
-                        <div class="single-service-area text-center">
-                            <h2>04.</h2>
-                            <h4>Te notificamos de la entrega!</h4>
-                            <p>Mejoramos el nivel de tu servicio utilizando logística verde colaborando con el medio
-                                ambiente.</p>
+                            <h4>Disfrutá tu entrega!</h4>
+                            <p>Te notificamos la entrega y llevamos tu envío con movilidad Ecofriendly.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Discover More btn -->
-                <div class="col-12 text-center mt-100">
-                    <a href="#" class="btn mosh-btn">Discover More</a>
-                </div>
+                <!-- <div class="col-12 text-center mt-100">
+                    <a href="#" class="btn mosh-btn">Leer Más</a>
+                </div> -->
             </div>
         </div>
     </section>
     <!-- ***** Service Area End ***** -->
 
     <!-- ***** Nosotros Area Start ***** -->
-    <section class="mosh-aboutUs-area section_padding_100_0">
+    <!-- <section class="mosh-aboutUs-area section_padding_100_0">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-6">
@@ -194,10 +215,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- ***** Clients Area Start ***** -->
-    <section class="mosh-clients-area section_padding_100 clearfix">
+    <!-- <section class="mosh-clients-area section_padding_100 clearfix">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -217,11 +238,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Clients Area End ***** -->
 
     <!-- ***** Features Area Start ***** -->
-    <section class="mosh-features-area section_padding_100 clearfix">
+    <!-- <section class="mosh-features-area section_padding_100 clearfix">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-12 col-md-6">
@@ -233,10 +254,8 @@
                         <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus
                             blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.
                             Pellentesque sit amet tellus blandit. Etiam nec odio ves tibul. Nec odio vestibulum est
-                            mattis effic iturut magna. Pellente sque sita met tellus blandit. Etiam nec odio.</p>
-                        <!-- Progress Bar Content Area -->
-                        <div class="features-progress-bar mt-50">
-                            <!-- Single Progress Bar -->
+                            mattis effic iturut magna. Pellente sque sita met tellus blandit. Etiam nec odio.</p>                        
+                        <div class="features-progress-bar mt-50">                            
                             <div class="single_progress_bar mb-15 wow fadeInUp" data-wow-delay="0.2s">
                                 <p>Development</p>
                                 <div id="bar1" class="barfiller">
@@ -245,8 +264,7 @@
                                     </div>
                                     <span class="fill" data-percentage="70"></span>
                                 </div>
-                            </div>
-                            <!-- Single Progress Bar -->
+                            </div>                            
                             <div class="single_progress_bar mb-15 wow fadeInUp" data-wow-delay="0.4s">
                                 <p>Design</p>
                                 <div id="bar2" class="barfiller">
@@ -255,8 +273,7 @@
                                     </div>
                                     <span class="fill" data-percentage="90"></span>
                                 </div>
-                            </div>
-                            <!-- Single Progress Bar -->
+                            </div>                            
                             <div class="single_progress_bar mb-15 wow fadeInUp" data-wow-delay="0.6s">
                                 <p>SEO</p>
                                 <div id="bar3" class="barfiller">
@@ -270,16 +287,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Feature Thumb -->
+        </div>        
         <div class="features-img">
             <img src="img/bg-img/features.png" alt="">
         </div>
-    </section>
+    </section> -->
     <!-- ***** Feature Area End ***** -->
 
     <!-- ***** Service Area Start ***** -->
-    <section class="mosh-more-services-area d-sm-flex clearfix">
+    <!-- <section class="mosh-more-services-area d-sm-flex clearfix">
         <div class="single-more-service-area">
             <div class="more-service-content text-center wow fadeInUp" data-wow-delay=".1s">
                 <img src="img/core-img/trophy.png" alt="">
@@ -308,11 +324,11 @@
                 <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am.</p>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Service Area End ***** -->
 
     <!-- ***** Portfolio Area Start ***** -->
-    <section class="mosh-portfolio-area section_padding_100_0 clearfix">
+    <!-- <section class="mosh-portfolio-area section_padding_100_0 clearfix">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -335,8 +351,7 @@
             </div>
         </div>
 
-        <div class="mosh-portfolio">
-            <!-- Single gallery Item Start -->
+        <div class="mosh-portfolio">            
             <div class="single_gallery_item gd">
                 <img src="img/portfolio-img/1.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -345,8 +360,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item bi">
                 <img src="img/portfolio-img/2.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -355,8 +369,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item gd bi">
                 <img src="img/portfolio-img/3.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -365,8 +378,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item pho">
                 <img src="img/portfolio-img/4.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -375,8 +387,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item pho">
                 <img src="img/portfolio-img/5.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -385,8 +396,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item wd pc">
                 <img src="img/portfolio-img/6.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -395,8 +405,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item wd">
                 <img src="img/portfolio-img/7.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -405,8 +414,7 @@
                         <a href="#">Brand Identity</a>
                     </div>
                 </div>
-            </div>
-            <!-- Single gallery Item Start -->
+            </div>            
             <div class="single_gallery_item pc">
                 <img src="img/portfolio-img/8.jpg" alt="">
                 <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
@@ -417,8 +425,204 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Portfolio Area End ***** -->
+
+
+    <!-- ***** CTA Area Start ***** -->
+    <section class="mosh-call-to-action-area bg-img bg-overlay section_padding_100"
+        style="background-image: url(img/slider/img3.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content text-center wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-heading">
+                            <p>Descargá nuestra app</p>
+                            <h2>Podés hacer y seguir tus envíos desde tu celular!</h2>
+                            <a href="contacto.html"><img class="google-play-btn"
+                                    src="img/logos/google-play-badge.png" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
+    <!-- <section class="mosh-service-area clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="wrapper">
+
+                        <div class="package brilliant">
+                            <div class="name">Brilliant</div>
+                            <div class="price">€5</div>
+                            <div class="trial">Free 30 day trial</div>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <strong>Unlimited</strong> team members
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> team playlists
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> public playlists
+                                </li>                                
+                            </ul>
+                        </div>
+
+                        <div class="package brilliant">
+                            <div class="name">Brilliant</div>
+                            <div class="price">€5</div>
+                            <div class="trial">Free 30 day trial</div>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <strong>Unlimited</strong> team members
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> team playlists
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> public playlists
+                                </li>                                
+                            </ul>
+                        </div>
+
+                        <div class="package brilliant">
+                            <div class="name">Brilliant</div>
+                            <div class="price">€5</div>
+                            <div class="trial">Free 30 day trial</div>
+                            <hr>
+                            <ul>
+                                <li>
+                                    <strong>Unlimited</strong> team members
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> team playlists
+                                </li>
+                                <li>
+                                    <strong>Unlimited</strong> public playlists
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="mosh-more-services-area d-sm-flex clearfix">
+        <!-- <div class="container"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center" style="margin-top: 40px;">
+                        <!-- <p>Servicios</p> -->
+                        <h2>Servicio ChetEx de delivery de paquetes pequeños y medianos.</h2>
+                        <p>Vos elegi según tu urgencia y necesidad - 
+                            Aplica para zona de cobertura predefinida.
+                        </p>
+                    </div>
+                    
+                    <div class="section-heading text-center">
+                    <!-- <div class="chete more-service-content text-center wow fadeInUp" data-wow-delay=".1s"> -->
+                    <div class="text-center package brilliant ">
+                        <div class="name">ChetEx-3hs</div>
+                        <div class="price">$500</div>
+                        <div class="trial">Premium-express</div>
+                        <hr>
+                        <p>La entrega se realiza dentro de las siguientes 3 horas de haber solicitado tu envio.</p>
+                        <!-- <ul>
+                                        <li>
+                                            <strong>Unlimited</strong> team members
+                                        </li>
+                                        <li>
+                                            <strong>Unlimited</strong> team playlists
+                                        </li>
+                                        <li>
+                                            <strong>Unlimited</strong> public playlists
+                                        </li>
+                                    </ul> -->
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="single-more-service-area"> -->
+                    <!-- <div class="chete more-service-content text-center wow fadeInUp" data-wow-delay=".4s"> -->
+                    <div class="text-center package brilliant">
+                        <div class="name">ChetEx-12hs</div>
+                        <div class="price">$200</div>
+                        <div class="trial">Flexi-express</div>
+                        <hr>
+                        <p>La entrega se realiza dentro de las siguientes 12 hs. de haber solicitado tu envió.</p>
+                        <!-- <ul>
+                                    <li>
+                                        <strong>Unlimited</strong> team members
+                                    </li>
+                                    <li>
+                                        <strong>Unlimited</strong> team playlists
+                                    </li>
+                                    <li>
+                                        <strong>Unlimited</strong> public playlists
+                                    </li>
+                                </ul> -->
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="single-more-service-area"> -->
+                    <!-- <div class="chete more-service-content text-center wow fadeInUp" data-wow-delay=".7s"> -->
+                    <div class="text-center package brilliant">
+                        <div class="name">ChetEx-24hs</div>
+                        <div class="price">$100</div>
+                        <div class="trial">Express standar</div>
+                        <hr>
+                        <p>Podes acordar un horario exacto para recibir el paquete al día siguiente. Zona de
+                            cobertura
+                            predefinida.</p>
+                        <!-- <ul>
+                                    <li>
+                                        <strong>Unlimited</strong> team members
+                                    </li>
+                                    <li>
+                                        <strong>Unlimited</strong> team playlists
+                                    </li>
+                                    <li>
+                                        <strong>Unlimited</strong> public playlists
+                                    </li>
+                                </ul> -->
+                    </div>
+                    <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- </div> -->
+    </section>
+
+    <!-- ***** CTA Area Start ***** -->
+    <!-- <section class="mosh-call-to-action-area bg-img bg-overlay section_padding_100"
+        style="background-image: url(img/slider/img3.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content text-center wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-heading">
+                            <p>Cuidamos el medioambiente</p>
+                            <h2>Todos nuestros vehículos son Ecofriendly</h2>
+                            <a href="contacto.html" class="btn mosh-btn">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ***** CTA Area End ***** -->
 
     <!-- ***** Workflow Area Start ***** -->
     <section class="mosh-workflow-area section_padding_100_0 clearfix">
@@ -426,8 +630,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center mb-0">
-                        <p>Our Work Flow</p>
-                        <h2>This is how we work on Projects</h2>
+                        <p>Nuestro Flujo de Trabajo</p>
+                        <h2>Así es como cuidamos tus envíos...</h2>
                     </div>
                 </div>
             </div>
@@ -446,36 +650,34 @@
                             <div class="single-workflow-area d-flex">
                                 <h2>1.</h2>
                                 <div class="workflow-content ml-15">
-                                    <h4>This is the first step</h4>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
-                                        tellus blandit. Etiam nec odio vestibul.</p>
+                                    <h4>El primero Paso</h4>
+                                    <p>Te comunicas con nosotros y te ayudamos sobre el envío que querés hacer.</p>
                                 </div>
                             </div>
                             <!-- Single Service Area -->
                             <div class="single-workflow-area d-flex">
                                 <h2>2.</h2>
                                 <div class="workflow-content ml-15">
-                                    <h4>This is the second step</h4>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
-                                        tellus blandit. Etiam nec odio vestibul.</p>
+                                    <h4>Pasamos a retirar tu envío</h4>
+                                    <p>Vamos a donde nos indiques a buscar lo que quieras enviar.</p>
                                 </div>
                             </div>
                             <!-- Single Service Area -->
                             <div class="single-workflow-area d-flex">
                                 <h2>3.</h2>
                                 <div class="workflow-content ml-15">
-                                    <h4>This is the third step</h4>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
-                                        tellus blandit. Etiam nec odio vestibul.</p>
+                                    <h4>Llevamos tu envío</h4>
+                                    <p>Uno de nuestros drivers se encargará de que tu envío llegue en tiempo y forma.
+                                    </p>
                                 </div>
                             </div>
                             <!-- Single Service Area -->
                             <div class="single-workflow-area d-flex">
                                 <h2>4.</h2>
                                 <div class="workflow-content ml-15">
-                                    <h4>This is the fourth step</h4>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et
-                                        tellus blandit. Etiam nec odio vestibul.</p>
+                                    <h4>Te notificamos de la entrega.</h4>
+                                    <p>Podes hacer el seguimiento de tu envío y además te notificamos cuando lo
+                                        entreguemos.</p>
                                 </div>
                             </div>
                         </div>
@@ -494,9 +696,7 @@
                 <div class="col-12">
                     <div class="cta-content text-center wow fadeIn" data-wow-delay="0.5s">
                         <div class="section-heading">
-                            <p>give us a shout</p>
-                            <h2>Are you Ready to have a Talk?</h2>
-                            <a href="contact.html" class="btn mosh-btn">Contact Us</a>
+                            <h2>Llevamos tus envíos. Traemos el futuro.</h2>
                         </div>
                     </div>
                 </div>
@@ -506,17 +706,18 @@
     <!-- ***** CTA Area End ***** -->
 
     <!-- ***** Contact Area Start ***** -->
-    <section class="contact-area section_padding_100">
+    <section id="contacto" class="contact-area section_padding_100">
         <div class="container">
             <div class="row">
                 <!-- Contact Form Area -->
                 <div class="col-12 col-md-8">
                     <div class="contact-form-area">
                         <h2>Contactanos!</h2>
-                        <form action="#">
+                        <form id="contact-form" class="contact" name="contact-form">
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <input type="text" class="form-control" id="name" placeholder="Nombre y Apellido">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Nombre y Apellido">
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <input type="email" class="form-control" id="email" placeholder="E-mail">
@@ -570,21 +771,52 @@
     </section>
     <!-- ***** Contact Area End ***** -->
 
+    <!-- ***** CTA Area Start ***** -->
+    <section class="mosh-call-to-action-area bg-img bg-overlay section_padding_100"
+        style="background-image: url(img/bg-img/sustentable.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content text-center wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-heading">
+                            <h2>Por cada 100 envíos que los clientes realizan a través de Chetenvio®, la empresa dona un
+                                árbol nativo del lugar,
+                                que es plantado por escuelas en lugares pre definidos</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
     <!-- Google Maps -->
-    <div class="map-area">
+    <!-- <section id="areaCobertura" class="contact-area section_padding_100">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form Area -->
+    <!-- <div class="col-12 col-md-12"> -->
+
+    <div id="areaCobertura">
         <div id="googleMap"></div>
-        <div id="pano"></div>
     </div>
+    <!-- </div>
+            </div>
+        </div>
+    </section> -->
+
+
 
     <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-area clearfix">
-        <!-- Top Fotter Area -->
+    <!-- <footer class="footer-area clearfix">        
         <div class="top-footer-area section_padding_100_0">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="single-footer-widget mb-100">
-                            <a href="#" class="mb-50 d-block"><img src="img/core-img/logo.png" alt=""></a>
+                            <a href="#" class="mb-50 d-block">
+                                <img src="img/logos/8.svg" alt="">
+                            </a>
                             <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellent esque sit amet tellus
                                 blandit. Etiam nec odio vestibul.</p>
                         </div>
@@ -656,7 +888,7 @@
                 </div>
             </div>
         </div>
-        <!-- Fotter Bottom Area -->
+        
         <div class="footer-bottom-area">
             <div class="container h-100">
                 <div class="row h-100">
@@ -664,12 +896,11 @@
                         <div class="footer-bottom-content h-100 d-md-flex justify-content-between align-items-center">
                             <div class="copyright-text">
                                 <p>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    
                                     Copyright &copy;
                                     <script>document.write(new Date().getFullYear());</script> All rights reserved |
                                     This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                        href="https://colorlib.com" target="_blank">Colorlib</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        href="https://colorlib.com" target="_blank">Colorlib</a>                                    
                                 </p>
                             </div>
                             <div class="footer-social-info">
@@ -685,7 +916,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- ***** Footer Area End ***** -->
 
     <!-- jQuery-2.2.4 js -->
@@ -698,14 +929,98 @@
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
 
-     <!-- Google Maps -->
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBanM3ZlqVsjGr9EepppXSB4Ysmip6yWN0"></script>
-     <script src="js/map-active.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBanM3ZlqVsjGr9EepppXSB4Ysmip6yWN0"></script>
+    <script src="js/map-active.js"></script>
 
     <!-- <script src="js/main.js"></script> -->
 
+    <script>
+        $("#contact-form").submit(function (event) {
+            // cancels the form submission            
+            // event.preventDefault();
+            submitForm();
+        });
 
+        function submitForm() {
+
+            // Initiate Variables With Form Content
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var message = $("#message").val();
+
+
+            // $('#loadMsg').show();
+            // $('#inTurnFadingTextG').show();            
+            $.ajax({
+                type: "POST",
+                url: "send_mail.php",
+                data: "name=" + name + "&email=" + email + "&message=" + message,
+                // data: { name : name,  email: email, message: message},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (text) {
+                    alert("Vamooooooo")
+                    // $('#loadMsg').hide();
+                    // $('#inTurnFadingTextG').hide();
+                    // formSuccess();
+                }
+            })
+        }
+
+        // function formSuccess() {
+        //     $("#name").val("");
+        //     $("#email").val("");
+        //     $("#subject").val("");
+        //     $("#message").val("");
+
+        //     $("#msgSubmit").removeClass("hidden");
+
+        //     $('#msgSubmit').fadeIn();
+
+        //     setTimeout(function () {
+        //         $("#msgSubmit").delay('1500').fadeOut('slow');
+        //     }, 4000);
+        // }
+
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 3000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
 </body>
 
 </html>

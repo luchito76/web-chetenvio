@@ -15,11 +15,11 @@ var stylez = [
 var mapOptions = {
 	zoom: 16,
 	center: latlng,
-	scrollwheel: true,
+	scrollwheel: false,
 	scaleControl: true,
-    disableDefaultUI: false,    
+	disableDefaultUI: false,
 	mapTypeControlOptions: {
-		mapTypeIds: 'terrain' //[ google.maps.MapTypeId.ROADMAP, 'gMap' ]
+		mapTypeIds: [ google.maps.MapTypeId.ROADMAP, 'gMap' ]
 	}
 };
 map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
@@ -34,7 +34,7 @@ geocoder_map.geocode(
 		if (status == google.maps.GeocoderStatus.OK) {
 			map.setCenter(results[0].geometry.location);
 			var marker = new google.maps.Marker({
-				map: map,				
+				map: map,
 				position: map.getCenter()
 			});
 
@@ -48,10 +48,10 @@ geocoder_map.geocode(
 
 			const bermudaTriangle = new google.maps.Polygon({
 				paths: flightPlanCoordinates,
-				strokeColor: '#FF0000',
+				strokeColor: '#73d2c0',
 				strokeOpacity: 0.8,
 				strokeWeight: 2,
-				fillColor: '#FF0000',
+				fillColor: '#9fe0d4',
 				fillOpacity: 0.35
 			});
 			bermudaTriangle.setMap(map);

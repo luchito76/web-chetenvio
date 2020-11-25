@@ -74,7 +74,7 @@
 	}
 	.mosh-more-services-area {
 		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+		flex-wrap: wrap;		
 	}
 	.single_gallery_item {
 		width: 50%;
@@ -170,6 +170,7 @@
 	.mosh-more-services-area {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		width: 70%;
 	}
 	.single_gallery_item {
 		width: 100%;
