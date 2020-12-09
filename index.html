@@ -26,6 +26,19 @@
     <link href="scss/nosotros.css" rel="stylesheet">
     <!--load all styles -->
 
+
+    <!-- Start of Async Callbell Code -->
+    <script>
+        window.callbellSettings = {
+            token: "BfPiUM4wkL7WUcUBtGkLJGA8"
+        };
+    </script>
+    <script>
+        (function () { var w = window; var ic = w.callbell; if (typeof ic === "function") { ic('reattach_activator'); ic('update', callbellSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Callbell = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+    </script>
+    <!-- End of Async Callbell Code -->
+
+
 </head>
 
 <body>
@@ -1043,7 +1056,7 @@
         </div>
     </footer> -->
     <!-- ***** Footer Area End ***** -->
-    
+
 
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery-2.2.4.min.js"></script>
@@ -1060,23 +1073,6 @@
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBanM3ZlqVsjGr9EepppXSB4Ysmip6yWN0"></script>
     <script src="js/map-active.js"></script>
-
-    <!-- GetButton.io widget -->
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+5492995710204", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
 
     <script>
         $("#contact-form").submit(function (event) {
@@ -1102,7 +1098,7 @@
                 // data: { name : name,  email: email, message: message},
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
-                success: function (text) {                    
+                success: function (text) {
                     // $('#loadMsg').hide();
                     // $('#inTurnFadingTextG').hide();
                     // formSuccess();
@@ -1220,8 +1216,8 @@
 
         });
 
-    </script>   
-   
+    </script>
+
 </body>
 
 </html>
