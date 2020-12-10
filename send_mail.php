@@ -3,6 +3,10 @@
 require("class.phpmailer.php");
 $mail = new PHPMailer(true);
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $mail->SMTPDebug = 2;                                 // Enable verbose debug output
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'wo22.wiroos.host';  // Specify main and backup SMTP servers

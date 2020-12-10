@@ -1076,7 +1076,7 @@
     <script>
         $("#contact-form").submit(function (event) {
             // cancels the form submission            
-            // event.preventDefault();
+            event.preventDefault();
             submitForm();
         });
 
@@ -1089,38 +1089,40 @@
             var email = $("#email").val();
             var message = $("#message").val();
 
+            $form = $(this);
+            //show some response on the button
+            $('button[type="submit"]', $form).each(function () {
+                $btn = $(this);
+                $btn.prop('type', 'button');
+                $btn.prop('orig_label', $btn.text());
+                $btn.text('Sending ...');
+            });
 
-            // $('#loadMsg').show();
-            // $('#inTurnFadingTextG').show();            
+
             $.ajax({
                 type: "POST",
-                url: "send_mail.php",
-                data: "name=" + name + "&telefono=" + telefono + "&direccion=" + direccion + "&email=" + email + "&message=" + message,
-                // data: { name : name,  email: email, message: message},
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (text) {
-                    // $('#loadMsg').hide();
-                    // $('#inTurnFadingTextG').hide();
-                    // formSuccess();
-                }
-            })
+                url: 'send_mail.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+            // // $('#loadMsg').show();
+            // // $('#inTurnFadingTextG').show();            
+            // $.ajax({
+            //     type: "POST",
+            //     url: "send_mail.php",
+            //     data: "name=" + name + "&telefono=" + telefono + "&direccion=" + direccion + "&email=" + email + "&message=" + message,
+            //     // data: { name : name,  email: email, message: message},
+            //     contentType: "application/json; charset=utf-8",
+            //     dataType: "json",
+            //     success: function (text) {
+            //         // $('#loadMsg').hide();
+            //         // $('#inTurnFadingTextG').hide();
+            //         // formSuccess();
+            //     }
+            // })
         }
 
-        // function formSuccess() {
-        //     $("#name").val("");
-        //     $("#email").val("");
-        //     $("#subject").val("");
-        //     $("#message").val("");
-
-        //     $("#msgSubmit").removeClass("hidden");
-
-        //     $('#msgSubmit').fadeIn();
-
-        //     setTimeout(function () {
-        //         $("#msgSubmit").delay('1500').fadeOut('slow');
-        //     }, 4000);
-        // }
 
         $('a[href*="#"]')
             // Remove links that don't actually link to anything
