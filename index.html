@@ -841,8 +841,8 @@
                         <form id="contact-form" class="contact" name="contact-form">
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Nombre y Apellidos">
+                                    <input type="text" class="form-control" name="name"
+                                        placeholder="Nombre y Apellido">
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <input type="number" class="form-control" id="telefono" placeholder="Teléfono">
@@ -861,8 +861,11 @@
                                         placeholder="Mensaje"></textarea>
                                 </div>
                                 <button class="btn mosh-btn mt-50" type="submit">Enviar</button>
+
                             </div>
                         </form>
+
+
                     </div>
                 </div>
                 <!-- Contact Information -->
@@ -1080,77 +1083,22 @@
             submitForm();
         });
 
-        function after_form_submitted(data) {
-            alert("After submit: ")
-            if (data.result == 'success') {
-                $('form#reused_form').hide();
-                $('#success_message').show();
-                $('#error_message').hide();
-            }
-            else {
-                $('#error_message').append('<ul></ul>');
-
-                jQuery.each(data.errors, function (key, val) {
-                    $('#error_message ul').append('<li>' + key + ':' + val + '</li>');
-                });
-                $('#success_message').hide();
-                $('#error_message').show();
-
-                //reverse the response on the button
-                $('button[type="button"]', $form).each(function () {
-                    $btn = $(this);
-                    label = $btn.prop('orig_label');
-                    if (label) {
-                        $btn.prop('type', 'submit');
-                        $btn.text(label);
-                        $btn.prop('orig_label', '');
-                    }
-                });
-
-            }//else
-        }
-
         function submitForm() {
-
-            // Initiate Variables With Form Content
-            var name = $("#name").val();
-            var telefono = $("#telefono").val();
-            var direccion = $("#direccion").val();
-            var email = $("#email").val();
-            var message = $("#message").val();
-
-            $form = $(this);
-            //show some response on the button
-            $('button[type="submit"]', $form).each(function () {
-                $btn = $(this);
-                $btn.prop('type', 'button');
-                $btn.prop('orig_label', $btn.text());
-                $btn.text('Sending ...');
-            });
-
-
+            // $('#loadMsg').show();
+            // $('#inTurnFadingTextG').show();            
             $.ajax({
                 type: "POST",
-                url: 'send_mail.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json'
-            });
-            // // $('#loadMsg').show();
-            // // $('#inTurnFadingTextG').show();            
-            // $.ajax({
-            //     type: "POST",
-            //     url: "send_mail.php",
-            //     data: "name=" + name + "&telefono=" + telefono + "&direccion=" + direccion + "&email=" + email + "&message=" + message,
-            //     // data: { name : name,  email: email, message: message},
-            //     contentType: "application/json; charset=utf-8",
-            //     dataType: "json",
-            //     success: function (text) {
-            //         // $('#loadMsg').hide();
-            //         // $('#inTurnFadingTextG').hide();
-            //         // formSuccess();
-            //     }
-            // })
+                url: "send_mail.php",
+                data: "name=" + name + "&telefono=" + telefono + "&direccion=" + direccion + "&email=" + email + "&message=" + message,
+                // data: { name : name,  email: email, message: message},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (text) {
+                    // $('#loadMsg').hide();
+                    // $('#inTurnFadingTextG').hide();
+                    // formSuccess();
+                }
+            })
         }
 
 

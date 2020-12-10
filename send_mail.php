@@ -2,10 +2,11 @@
 
 require("class.phpmailer.php");
 $mail = new PHPMailer(true);
+print_r( $_POST );
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 $mail->SMTPDebug = 2;                                 // Enable verbose debug output
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -16,9 +17,11 @@ $mail->Password = 'cami&juli83';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
+
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
+
 
 //Recipients
 $mail->setFrom('lucho@doshorizontes.com.ar', 'Chetenvio');
@@ -34,14 +37,14 @@ $mail->addAddress('luisparadawagner@gmail.com', 'Luis Parada');     // Add a rec
  $footer .= '<tr>';
  $footer .= '<td>';
  $footer .= "<strong><span style='color: #4E4D4D; font-size: 15px;'>Mensaje enviado desde Chetenvio </span></strong><br/><br/> 
- <strong><span style='color: #4E4D4D; font-size: 12px'>Nombre y Apellido: </span></strong>. $name <br/>
- <strong><span style='color: #4E4D4D; font-size: 12px'>e-mail: </span></strong>. $email_address <br/>
- <strong><span style='color: #4E4D4D; font-size: 12px'>Mensaje: </span></strong>. $message <br/>";				 
+ <strong><span style='color: #4E4D4D; font-size: 12px'>Nombre y Apellido apa: </span></strong> $name <br/>
+ <strong><span style='color: #4E4D4D; font-size: 12px'>e-mail: </span></strong> $email_address <br/>
+ <strong><span style='color: #4E4D4D; font-size: 12px'>Mensaje: </span></strong> $message <br/>";				 
  $footer .= '</td>';
  $footer .= '</tr>';
  $footer .= '</table>';
 
- echo "The $name has arrived.";
+ 
  $mail->Subject = 'Mail enviado desde Chetenvio';
  $mail->Body    = $message;//'This is the HTML message body <b>in bold!</b>';
  $mail->msgHTML($footer);

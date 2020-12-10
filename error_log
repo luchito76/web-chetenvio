@@ -1,0 +1,83 @@
+[10-Dec-2020 09:58:22 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:58:22 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:58:22 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:58:22 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:58:22 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'SMTP Error: The following recipients failed: luisparadawagner@gmail.com' in /home/doshori1/public_html/chetenvio/class.phpmailer.php:1021
+Stack trace:
+#0 /home/doshori1/public_html/chetenvio/class.phpmailer.php(845): PHPMailer->SmtpSend('Date: Thu, 10 D...', '--b1_92b415c043...')
+#1 /home/doshori1/public_html/chetenvio/class.phpmailer.php(763): PHPMailer->PostSend()
+#2 /home/doshori1/public_html/chetenvio/send_mail.php(49): PHPMailer->Send()
+#3 {main}
+  thrown in /home/doshori1/public_html/chetenvio/class.phpmailer.php on line 1021
+[10-Dec-2020 09:58:53 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:58:53 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:58:53 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:58:53 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:11 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:11 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:11 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:11 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:12 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 09:59:13 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 09:59:13 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 09:59:13 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 09:59:13 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:00:04 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:00:04 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:00:04 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:00:04 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:00:05 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:00:06 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:00:06 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:00:06 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:00:06 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:00:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:00:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:00:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:00:07 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:00:49 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:00:49 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:00:49 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:00:49 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:01:30 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:01:30 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:01:30 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:01:30 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 33
+[10-Dec-2020 10:04:41 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:04:41 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:04:41 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:04:41 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 36
+[10-Dec-2020 10:32:32 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:32:32 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:32:32 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:32:32 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 39
+[10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 19
+[10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
+[10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
+[10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 39
