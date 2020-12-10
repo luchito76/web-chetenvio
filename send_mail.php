@@ -11,7 +11,7 @@ $mail->SMTPDebug = 2;                                 // Enable verbose debug ou
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'wo22.wiroos.host';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'luisp@doshorizontes.com.ar';                 // SMTP username
+$mail->Username = 'lucho@doshorizontes.com.ar';                 // SMTP username
 $mail->Password = 'cami&juli83';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
@@ -21,7 +21,7 @@ $email_address = $_POST['email'];
 $message = $_POST['message']; 
 
 //Recipients
-$mail->setFrom('luisp@doshorizontes.com.ar', 'Chetenvio');
+$mail->setFrom('lucho@doshorizontes.com.ar', 'Chetenvio');
 $mail->addAddress('luisparadawagner@gmail.com', 'Luis Parada');     // Add a recipient
 // $mail->addCC('luisparadawagner@gmail.com');
 
