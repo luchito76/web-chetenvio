@@ -81,3 +81,6 @@ Stack trace:
 [10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 20
 [10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 21
 [10-Dec-2020 10:34:29 America/Argentina/Buenos_Aires] PHP Notice:  Undefined variable: footer in /home/doshori1/public_html/chetenvio/send_mail.php on line 39
+[10-Dec-2020 11:10:20 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: name in /home/doshori1/public_html/chetenvio/send_mail.php on line 3
+[10-Dec-2020 11:10:20 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: email in /home/doshori1/public_html/chetenvio/send_mail.php on line 4
+[10-Dec-2020 11:10:20 America/Argentina/Buenos_Aires] PHP Notice:  Undefined index: message in /home/doshori1/public_html/chetenvio/send_mail.php on line 5

@@ -1,5 +1,12 @@
 <?php 
 
+$name = $_POST['name']; 
+$telefono = $_POST['telefono']; 
+$direccion = $_POST['direccion']; 
+$email_address = $_POST['email']; 
+$subject = $_POST['subject']; 
+$message = $_POST['message']; 
+
 require("class.phpmailer.php");
 $mail = new PHPMailer(true);
 print_r( $_POST );
@@ -17,12 +24,6 @@ $mail->Password = 'cami&juli83';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 
-
-$name = $_POST['name']; 
-$email_address = $_POST['email']; 
-$message = $_POST['message']; 
-
-
 //Recipients
 $mail->setFrom('lucho@doshorizontes.com.ar', 'Chetenvio');
 $mail->addAddress('luisparadawagner@gmail.com', 'Luis Parada');     // Add a recipient
@@ -37,8 +38,11 @@ $mail->addAddress('luisparadawagner@gmail.com', 'Luis Parada');     // Add a rec
  $footer .= '<tr>';
  $footer .= '<td>';
  $footer .= "<strong><span style='color: #4E4D4D; font-size: 15px;'>Mensaje enviado desde Chetenvio </span></strong><br/><br/> 
- <strong><span style='color: #4E4D4D; font-size: 12px'>Nombre y Apellido apa: </span></strong> $name <br/>
+ <strong><span style='color: #4E4D4D; font-size: 12px'>Nombre y Apellido: </span></strong> $name <br/>
+ <strong><span style='color: #4E4D4D; font-size: 12px'>Dirección: </span></strong> $direccion <br/>
+ <strong><span style='color: #4E4D4D; font-size: 12px'>Teléfono: </span></strong> $telefono <br/>
  <strong><span style='color: #4E4D4D; font-size: 12px'>e-mail: </span></strong> $email_address <br/>
+ <strong><span style='color: #4E4D4D; font-size: 12px'>Asunto: </span></strong> $subject <br/>
  <strong><span style='color: #4E4D4D; font-size: 12px'>Mensaje: </span></strong> $message <br/>";				 
  $footer .= '</td>';
  $footer .= '</tr>';

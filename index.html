@@ -838,11 +838,11 @@
                 <div class="col-12 col-md-8">
                     <div class="contact-form-area">
                         <h2>Contactanos!</h2>
-                        <form id="contact-form" class="contact" name="contact-form">
+                        <form method="POST" action="send_mail.php" id="contact-form">
                             <div class="row">
                                 <div class="col-12 col-md-6">
-                                    <input type="text" class="form-control" name="name"
-                                        placeholder="Nombre y Apellido">
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Nombre y Apellido" required>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <input type="number" class="form-control" id="telefono" placeholder="Teléfono">
@@ -851,24 +851,26 @@
                                     <input type="text" class="form-control" id="direccion" placeholder="Dirección">
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                                    <input type="text" class="form-control" id="subject" placeholder="Asunto" required>
                                 </div>
                                 <div class="col-12">
                                     <textarea name="message" class="form-control" id="message" cols="30" rows="10"
-                                        placeholder="Mensaje"></textarea>
+                                        placeholder="Mensaje" required></textarea>
                                 </div>
-                                <button class="btn mosh-btn mt-50" type="submit">Enviar</button>
+
+                                <div class="col-12">
+                                    <button class="btn mosh-btn mt-50" type="submit">Enviar</button>
+                                </div>
 
                             </div>
                         </form>
-
-
                     </div>
+                    <!-- Contact Information -->
                 </div>
-                <!-- Contact Information -->
+
                 <div class="col-12 col-md-4">
                     <div class="contact-information">
                         <h2>Nuestros Datos</h2>
@@ -900,8 +902,43 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-12">
+                    <div id="center" class="center">
+                        <div id="inTurnFadingTextG">
+                            <div id="inTurnFadingTextG_1" class="inTurnFadingTextG">E</div>
+                            <div id="inTurnFadingTextG_2" class="inTurnFadingTextG">n</div>
+                            <div id="inTurnFadingTextG_3" class="inTurnFadingTextG">v</div>
+                            <div id="inTurnFadingTextG_4" class="inTurnFadingTextG">i</div>
+                            <div id="inTurnFadingTextG_5" class="inTurnFadingTextG">a</div>
+                            <div id="inTurnFadingTextG_6" class="inTurnFadingTextG">n</div>
+                            <div id="inTurnFadingTextG_7" class="inTurnFadingTextG">d</div>
+                            <div id="inTurnFadingTextG_8" class="inTurnFadingTextG">o</div>
+                            <div id="inTurnFadingTextG_9" class="inTurnFadingTextG">.</div>
+                            <div id="inTurnFadingTextG_10" class="inTurnFadingTextG">.</div>
+                            <div id="inTurnFadingTextG_11" class="inTurnFadingTextG">.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div id="loadMsg" class="load-bar">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-12 mt-4">
+                    <div id="msgSubmit" class="alert alert-success hidden">Mensaje Enviado!!!</div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <div id="msgError" class="alert alert-warning hidden">Debe completar los campos requeridos!!!</div>
+                </div>
             </div>
-        </div>
+
+
+
     </section>
     <!-- ***** Contact Area End ***** -->
 
@@ -1056,7 +1093,7 @@
 
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery-2.2.4.min.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <!--Floating WhatsApp css-->
     <link rel="stylesheet" href="css/floating-wpp.min.css">
     <!--Floating WhatsApp javascript-->
@@ -1077,6 +1114,13 @@
     <script src="js/map-active.js"></script>
 
     <script>
+        $(document).ready(function () {
+            $('#msgError').hide();
+            $('#msgSubmit').hide();
+            $('#loadMsg').hide();
+            $('#inTurnFadingTextG').hide();
+        });
+
         $("#contact-form").submit(function (event) {
             // cancels the form submission            
             event.preventDefault();
@@ -1084,21 +1128,76 @@
         });
 
         function submitForm() {
-            // $('#loadMsg').show();
-            // $('#inTurnFadingTextG').show();            
-            $.ajax({
-                type: "POST",
-                url: "send_mail.php",
-                data: "name=" + name + "&telefono=" + telefono + "&direccion=" + direccion + "&email=" + email + "&message=" + message,
-                // data: { name : name,  email: email, message: message},
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (text) {
-                    // $('#loadMsg').hide();
-                    // $('#inTurnFadingTextG').hide();
-                    // formSuccess();
+            const constraints = {
+                name: {
+                    presence: { allowEmpty: false }
+                },
+                email: {
+                    presence: { allowEmpty: false },
+                    email: true
+                },
+                message: {
+                    presence: { allowEmpty: false }
                 }
-            })
+            };
+
+            const form = document.getElementById('contact-form');
+
+            const formValues = {
+                name: form.elements.name.value,
+                email: form.elements.email.value,
+                message: form.elements.message.value
+            };
+            const errors = validate(formValues, constraints);
+
+            if (errors) {
+                event.preventDefault();                
+                $('#msgError').fadeIn();
+
+                setTimeout(function () {
+                    $("#msgError").delay('1500').fadeOut('slow');
+                }, 4000);
+            } else {
+                $('#loadMsg').show();
+                $('#inTurnFadingTextG').show();
+
+                var name = $("#name").val();
+                var telefono = $("#telefono").val();
+                var direccion = $("#direccion").val();
+                var email = $("#email").val();
+                var subject = $("#subject").val();
+                var message = $("#message").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "send_mail.php",
+                    data: { name: name, telefono: telefono, direccion: direccion, email: email, subject: subject, message: message },
+                    success: function (text) {
+                        $('#loadMsg').hide();
+                        $('#inTurnFadingTextG').hide();
+                        formSuccess();
+                    }
+                })
+            }
+
+
+        }
+
+        function formSuccess() {
+            $("#name").val("");
+            $("#telefono").val("");
+            $("#direccion").val("");
+            $("#email").val("");
+            $("#subject").val("");
+            $("#message").val("");
+
+            $("#msgSubmit").removeClass("hidden");
+
+            $('#msgSubmit').fadeIn();
+
+            setTimeout(function () {
+                $("#msgSubmit").delay('1500').fadeOut('slow');
+            }, 4000);
         }
 
 

@@ -1646,8 +1646,8 @@ span.accor-open {
 }
 
 .contact-form-area .form-control {
-	font-size: 12px;
-	color: #cbcddc;
+	font-size: 14px;
+	color: #0d0e18;
 	background-color: transparent;
 	border-top: none;
 	border-left: none;
@@ -1885,4 +1885,115 @@ li::before {
 	top: 6px;
 	text-shadow: 0 0 2px #40c1ac;
 	font-size: 1.4rem;
+}
+
+#inTurnFadingTextG {
+	width: 100%;
+	margin: auto;
+}
+.inTurnFadingTextG {
+	color: #cad529;
+	font-family: Arial;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	float: left;
+	animation-name: d;
+	-o-animation-name: d;
+	-ms-animation-name: d;
+	-webkit-animation-name: d;
+	-moz-animation-name: d;
+	animation-duration: 1.641s;
+	-o-animation-duration: 1.641s;
+	-ms-animation-duration: 1.641s;
+	-webkit-animation-duration: 1.641s;
+	-moz-animation-duration: 1.641s;
+	animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-direction: normal;
+	-o-animation-direction: normal;
+	-ms-animation-direction: normal;
+	-webkit-animation-direction: normal;
+	-moz-animation-direction: normal;
+}
+#inTurnFadingTextG_1 {
+	animation-delay: .5825s;
+	-o-animation-delay: .5825s;
+	-ms-animation-delay: .5825s;
+	-webkit-animation-delay: .5825s;
+	-moz-animation-delay: .5825s;
+}
+#inTurnFadingTextG_2 {
+	animation-delay: .699s;
+	-o-animation-delay: .699s;
+	-ms-animation-delay: .699s;
+	-webkit-animation-delay: .699s;
+	-moz-animation-delay: .699s;
+}
+#inTurnFadingTextG_3 {
+	animation-delay: .8155s;
+	-o-animation-delay: .8155s;
+	-ms-animation-delay: .8155s;
+	-webkit-animation-delay: .8155s;
+	-moz-animation-delay: .8155s;
+}
+#inTurnFadingTextG_4 {
+	animation-delay: .932s;
+	-o-animation-delay: .932s;
+	-ms-animation-delay: .932s;
+	-webkit-animation-delay: .932s;
+	-moz-animation-delay: .932s;
+}
+#inTurnFadingTextG_5 {
+	animation-delay: 1.0485s;
+	-o-animation-delay: 1.0485s;
+	-ms-animation-delay: 1.0485s;
+	-webkit-animation-delay: 1.0485s;
+	-moz-animation-delay: 1.0485s;
+}
+#inTurnFadingTextG_6 {
+	animation-delay: 1.165s;
+	-o-animation-delay: 1.165s;
+	-ms-animation-delay: 1.165s;
+	-webkit-animation-delay: 1.165s;
+	-moz-animation-delay: 1.165s;
+}
+#inTurnFadingTextG_7 {
+	animation-delay: 1.2915s;
+	-o-animation-delay: 1.2915s;
+	-ms-animation-delay: 1.2915s;
+	-webkit-animation-delay: 1.2915s;
+	-moz-animation-delay: 1.2915s;
+}
+#inTurnFadingTextG_8 {
+	animation-delay: 1.408s;
+	-o-animation-delay: 1.408s;
+	-ms-animation-delay: 1.408s;
+	-webkit-animation-delay: 1.408s;
+	-moz-animation-delay: 1.408s;
+}
+#inTurnFadingTextG_9 {
+	animation-delay: 1.5245s;
+	-o-animation-delay: 1.5245s;
+	-ms-animation-delay: 1.5245s;
+	-webkit-animation-delay: 1.5245s;
+	-moz-animation-delay: 1.5245s;
+}
+#inTurnFadingTextG_10 {
+	animation-delay: 1.641s;
+	-o-animation-delay: 1.641s;
+	-ms-animation-delay: 1.641s;
+	-webkit-animation-delay: 1.641s;
+	-moz-animation-delay: 1.641s;
+}
+#inTurnFadingTextG_11 {
+	animation-delay: 1.7575s;
+	-o-animation-delay: 1.7575s;
+	-ms-animation-delay: 1.7575s;
+	-webkit-animation-delay: 1.7575s;
+	-moz-animation-delay: 1.7575s;
 }
