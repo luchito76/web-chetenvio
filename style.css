@@ -103,7 +103,7 @@ img {
 
 .mosh-about-us-thumb:hover {
 	/* padding: 100px 20px; */
-    box-shadow: 0 30px 40px 30px rgba(0, 0, 0, 0.1);;
+	box-shadow: 0 30px 40px 30px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 500px) {
@@ -329,7 +329,7 @@ img {
 	margin-bottom: 100px;
 }
 
-.section-heading-quienes{
+.section-heading-quienes {
 	font-size: 40px;
 	margin: 0;
 	font-weight: 900;
@@ -1304,7 +1304,7 @@ span.accor-open {
 }
 
 .subscribe-newsletter-content form > input {
-	width: 60%;
+	width: 600px;
 	height: 55px;
 	border-radius: 70px;
 	border: none;
@@ -1324,7 +1324,7 @@ span.accor-open {
 	color: #fff;
 	background-color: #4a7aec;
 	position: absolute;
-	right: 20%;
+	right: 0%;
 	font-weight: 700;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -2017,7 +2017,7 @@ hr {
 	max-width: 600px;
 	margin: 50px auto;
 	border-top: 6px solid #40c1ac;
-	line-height: 1.6;	
+	line-height: 1.6;
 }
 
 .accordion__item {
@@ -2070,6 +2070,35 @@ hr {
 	transition: height 0.3s ease-out;
 	height: 0;
 	overflow: hidden;
+}
+
+.txt_envio {
+	color: white;
+}
+
+.buscar-btn {
+	background-color: #40c1ac !important;
+}
+.buscar-btn-sticky {
+	background-color: #fdf8e1 !important;
+	color: #40c1ac !important;
+}
+
+.contenedor {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+.texto-encima {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.centrado {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 /* --------------------------------
 ============= The End =============
