@@ -37,7 +37,7 @@ $mail->addAddress('luisparadawagner@gmail.com', 'Luis Parada');     // Add a rec
  $footer .= '<table style="width: 95%;">';
  $footer .= '<tr>';
  $footer .= '<td>';
- $footer .= "<strong><span style='color: #4E4D4D; font-size: 15px;'>Mensaje enviado desde Chetenvio </span></strong><br/><br/> 
+ $footer .= "<strong><span style='color: #4E4D4D; font-size: 15px;'>Mensaje enviado desde Chetenvio.com </span></strong><br/><br/> 
  <strong><span style='color: #4E4D4D; font-size: 12px'>Nombre y Apellido: </span></strong> $name <br/>
  <strong><span style='color: #4E4D4D; font-size: 12px'>Dirección: </span></strong> $direccion <br/>
  <strong><span style='color: #4E4D4D; font-size: 12px'>Teléfono: </span></strong> $telefono <br/>
