@@ -92,6 +92,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .google-play-btn {
+        max-width: 50%;
+    }
     .header_area {
         padding: 0;
         height: 80px;
@@ -130,9 +133,15 @@
     .hero-slide-content h4 {
         font-size: 18px;
     }
+    .hero-slide-content .slide-img {
+        margin-top: 80px;
+    }
+    .package {
+        width: 80%;
+    }
     .welcome_area,
     .single-hero-slide {
-        height: 600px;
+        /* height: 600px; */
     }
     .hero-slides .owl-next {
         right: 5px;

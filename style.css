@@ -536,7 +536,7 @@ img {
 }
 
 .single-hero-slide {
-	height: 1200px;
+	height: 900px;
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -556,7 +556,7 @@ img {
 
 .hero-slide-content .slide-img {
 	color: #fff;
-	margin-top: 100px;
+	/* margin-top: 80px; */
 	font-weight: 400;
 }
 
@@ -584,7 +584,7 @@ img {
 
 .hero-slides .owl-prev:hover,
 .hero-slides .owl-next:hover {
-	background-color: #4a7aec;
+	background-color: #40c1ac;
 }
 
 /* -------------------------
