@@ -17,8 +17,8 @@
     if ($.fn.owlCarousel) {
         $(".mosh-service-slides").owlCarousel({
             items: 3,
-            loop: true,
-            autoplay: true,
+            loop: false,
+            autoplay: false,
             smartSpeed: 800,
             margin: 30,
             center: true,
@@ -196,8 +196,10 @@
     $window.on('scroll', function () {
         if ($window.scrollTop() > 0) {
             $('.header_area').addClass('sticky');
+            $('.navbar .navbar-brand div img').attr('src','img/logos-img/logo1.svg');            
         } else {
             $('.header_area').removeClass('sticky');
+            $('.navbar .navbar-brand div img').attr('src','img/logos-img/logo2.svg');            
         }
     });
 

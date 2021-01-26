@@ -1,15 +1,3 @@
-/* [Master Stylesheet] */
-
-/* ------------------------------------------------
-:: Template Name: Mosh - Creative Business Template
-:: Template Author: Colorlib
-:: Template Author URI: https://colorlib.com
-:: Description: Mosh - is a Creative Business Template. It's very clean, creative & beautiful. It's super responsive & ultra light.
-:: Tags: Colorlib, App Landing, Apps, Responsive App Landing, Bootstrap 4, Free Theme, Free HTML Template, HTML5 Template etc.
-:: Version: v1.0.0
-:: Created: 01/02/2018
------------------------------------------------- */
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
 @import 'css/bootstrap.min.css';
@@ -30,6 +18,7 @@
 body,
 html {
 	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
 
 h1,
@@ -74,8 +63,35 @@ ol {
 }
 
 img {
+	object-fit: cover;
+	object-position: 50% 50%;
+	vertical-align: middle;
 	max-width: 100%;
-	height: auto;
+}
+
+.uno {
+	max-width: 100%;
+	max-height: 10vw;
+}
+
+.dos {
+	width: 35vw;
+	height: 65px;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 500px) {
+	.uno {
+		position: absolute;
+		width: 50%;
+		height: 50vh;
+	}
+
+	.center {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .section_padding_100 {
@@ -116,11 +132,6 @@ img {
 .section_padding_200 {
 	padding-top: 200px;
 	padding-bottom: 200px;
-}
-
-.section_padding_300 {
-	padding-top: 300px;
-	padding-bottom: 300px;
 }
 
 .section_padding_0_100 {
@@ -226,7 +237,7 @@ img {
 	-webkit-animation: 3000ms linear 0s normal none infinite running mosh-preloader;
 	animation: 3000ms linear 0s normal none infinite running mosh-preloader;
 	background-color: transparent;
-	border-color: #f1f2f3 #f1f2f3 #4a7aec;
+	border-color: #f1f2f3 #f1f2f3 #40c1ac;
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 4px;
@@ -295,7 +306,7 @@ img {
 
 .section-heading > p {
 	font-weight: 700;
-	color: #bec0cc;
+	color: #fff;
 	font-size: 12px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -331,7 +342,7 @@ img {
 }
 
 .mosh-btn:hover {
-	background-color: #329c8a;
+	background-color: #a5e2d8;
 	color: #fff;
 }
 
@@ -375,7 +386,7 @@ img {
 	top: 0;
 	padding: 0 15px;
 	height: 120px;
-	background-color: transparent;
+	background-color: #fdf8e1;
 	-webkit-transition-duration: 700ms;
 	transition-duration: 700ms;
 }
@@ -386,7 +397,7 @@ img {
 }
 
 .menu_area #nav .nav-link {
-	color: #fff;
+	color: #40c1ac;
 	display: block;
 	font-size: 15px;
 	-webkit-transition-duration: 500ms;
@@ -408,11 +419,11 @@ img {
 .menu_area #nav .nav-link:hover,
 .menu_area #nav .nav-item.active .nav-link,
 .menu_area .dropdown-item:hover {
-	color: #0a1f1c;
+	color: #40c1ac;
 }
 
 .login-register-btn a {
-	color: #0a1f1c;
+	color: #4a7aec;
 	display: inline-block;
 	font-weight: 500;
 }
@@ -428,11 +439,6 @@ img {
 .navbar-nav {
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
-}
-
-.logo {
-	width: 15%;
-	/* height: 150px; */
 }
 
 /* Search Form CSS */
@@ -477,6 +483,10 @@ img {
 	z-index: 999;
 }
 
+.header_area.sticky .nav-link {
+	color: cornsilk !important;
+}
+
 /* --------------------------
 :: 3.0 Welcome Area CSS
 -------------------------- */
@@ -484,7 +494,6 @@ img {
 .welcome_area {
 	position: relative;
 	z-index: 2;
-	height: 1200px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -562,7 +571,7 @@ img {
 	margin-bottom: 20px;
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
-	color: #bec0cc;
+	color: #40c1ac;
 }
 
 .mosh-service-slides .center .single-service-area h2,
@@ -586,7 +595,7 @@ img {
 	margin-top: -30px;
 	left: -25px;
 	border-radius: 50%;
-	color: #40c1ac;
+	color: #a2baff;
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
 }
@@ -610,7 +619,7 @@ img {
 ------------------------- */
 
 .mosh-features-area {
-	background-color: #211b31;
+	background-color: #40c1ac;
 	position: relative;
 	z-index: 1;
 }
@@ -672,6 +681,7 @@ img {
 }
 
 .single_progress_bar p {
+	color: white;
 	margin-bottom: 10px;
 }
 
@@ -681,9 +691,9 @@ img {
 
 .single-more-service-area {
 	-webkit-box-flex: 0;
-	-ms-flex: 0 0 33%;
-	flex: 0 0 33%;
-	/* max-width: 33%; */
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
 	padding: 100px 20px;
 	position: relative;
 	z-index: 1;
@@ -949,8 +959,12 @@ span.accor-open {
 	margin-bottom: 50px;
 }
 
+.single-footer-widget p {
+	color: #fff;
+}
+
 .single-footer-widget ul > li > a {
-	color: rgba(226, 219, 243, 0.30);
+	color: #fff;
 	margin-bottom: 10px !important;
 	display: block;
 	font-weight: 500;
@@ -1007,6 +1021,9 @@ span.accor-open {
 	color: #4a7aec;
 }
 
+.footer-single-contact-info {
+	justify-content: center;
+}
 .footer-single-contact-info .contact-icon {
 	margin-right: 15px;
 }
@@ -1637,7 +1654,12 @@ span.accor-open {
 /* ----------------------
 :: 19.0 Contact Page CSS
 ---------------------- */
-
+.contact-information {
+	justify-content: center;
+}
+.single-contact-info {
+	justify-content: center;
+}
 .contact-form-area h2,
 .contact-information h2 {
 	font-size: 40px;
@@ -1646,8 +1668,8 @@ span.accor-open {
 }
 
 .contact-form-area .form-control {
-	font-size: 14px;
-	color: #0d0e18;
+	font-size: 12px;
+	color: #cbcddc;
 	background-color: transparent;
 	border-top: none;
 	border-left: none;
@@ -1734,26 +1756,6 @@ span.accor-open {
 	color: #292d4f;
 }
 
-/* --------------------------------
-============= The End =============
----------------------------------*/
-
-.mosh-service-area {
-	padding-top: 50px;
-}
-
-/* --------------------------------
-============= Estilos Fantasy  =============
----------------------------------*/
-
-.txt_envio {
-	color: white;
-}
-
-.buscar-btn {
-	background-color: #40c1ac !important;
-}
-
 .google-play-btn {
 	max-width: 20%;
 }
@@ -1780,7 +1782,7 @@ span.accor-open {
 .package {
 	box-sizing: border-box;
 	width: 301px;
-	height: 380px;
+	height: 250px;
 	border: 3px solid #e8e8e8;
 	border-radius: 7px;
 	display: inline-block;
@@ -1790,7 +1792,7 @@ span.accor-open {
 	-webkit-transition: margin-top 0.5s linear;
 	transition: margin-top 0.5s linear;
 	position: relative;
-	margin: 0px 30px 0px 30px;
+	margin: 0px 30px 30px 30px;
 }
 
 .package:hover {
@@ -1834,30 +1836,6 @@ hr {
 	position: relative;
 	bottom: -20px;
 }
-
-/* ul {
-	list-style: none;
-	padding: 0;
-	text-align: left;
-	margin-top: 29px;
-}
-
-li {
-	margin-bottom: 15px;
-} */
-
-/* .checkIcon {
-	font-family: "FontAwesome";
-	content: "\f00c";
-}
-
-li::before {
-	font-family: "FontAwesome";
-	content: "\f00c";
-	font-size: 1.3rem;
-	color: #40c1ac;
-	margin-right: 3px;
-} */
 
 .brilliant {
 	border-color: #40c1ac;
@@ -1997,3 +1975,11 @@ li::before {
 	-webkit-animation-delay: 1.7575s;
 	-moz-animation-delay: 1.7575s;
 }
+
+#googleMap {
+	width: 100%;
+	height: 680px;
+}
+/* --------------------------------
+============= The End =============
+---------------------------------*/
