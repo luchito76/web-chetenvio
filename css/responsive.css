@@ -1,4 +1,15 @@
-@media (min-width: 992px) and (max-width: 1300px) {
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+	.subscribe-newsletter-content form > input {
+		width: 600px;
+	}
+}
+
+@media (min-width: 1200px) {
 	.centrado {
 		position: absolute;
 		top: 50%;
@@ -6,7 +17,23 @@
 		transform: translate(-50%, -50%);
 	}
 	.subscribe-newsletter-content form > input {
-		width: 300px;
+		width: 400px;
+	}
+	.subscribe-newsletter-content form > button {
+		width: 80px;
+		padding: 0 10px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+	.centrado {
+		position: absolute;
+		top: 50%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+	}
+	.subscribe-newsletter-content form > input {
+		width: 400px;
 	}
 	.subscribe-newsletter-content form > button {
 		width: 80px;
@@ -105,6 +132,19 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	.centrado {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.subscribe-newsletter-content form > input {
+		width: 300px;
+	}
+	.subscribe-newsletter-content form > button {
+		width: 80px;
+		padding: 0 10px;
+	}	
 	.google-play-btn {
 		max-width: 50%;
 	}
@@ -303,6 +343,22 @@
 }
 
 @media all and (max-width: 1000px) and (min-width: 700px) {
+	.google-play-btn {
+		max-width: 35%;
+	}
+	.centrado {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.subscribe-newsletter-content form > input {
+		width: 300px;
+	}
+	.subscribe-newsletter-content form > button {
+		width: 80px;
+		padding: 0 10px;
+	}	
 	#sidebar ul li a:before {
 		content: "Email: ";
 		font-style: italic;
