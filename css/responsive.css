@@ -132,18 +132,20 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-	.centrado {
+	/* .centrado {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-	}
+	} */
 	.subscribe-newsletter-content form > input {
-		width: 300px;
+		/* width: 300px; */
+		display: none;
 	}
 	.subscribe-newsletter-content form > button {
-		width: 80px;
-		padding: 0 10px;
+		display: none;
+		/* width: 80px;
+		padding: 0 10px; */
 	}	
 	.google-play-btn {
 		max-width: 50%;
@@ -343,6 +345,13 @@
 }
 
 @media all and (max-width: 1000px) and (min-width: 700px) {
+	.cuatro {
+		width: 20vw;
+		height: 65px;
+		padding-bottom: 5px;
+		margin-bottom: 0px;
+	}
+
 	.google-play-btn {
 		max-width: 35%;
 	}

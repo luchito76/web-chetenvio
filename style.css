@@ -88,6 +88,13 @@ img {
 	margin-bottom: 5px;
 }
 
+.cuatro {
+	width: 15vw;
+	height: 65px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+
 .mosh-about-us-thumb {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 25%;
@@ -119,6 +126,11 @@ img {
 	}
 }
 
+.section_marging_0_50 {
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
 .section_padding_100 {
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -147,6 +159,11 @@ img {
 .section_padding_50_20 {
 	padding-top: 50px;
 	padding-bottom: 20px;
+}
+
+.section_padding_50_50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section_padding_150 {
@@ -2099,6 +2116,10 @@ hr {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.frase-arbol {
+	font-size: 2em !important;
 }
 /* --------------------------------
 ============= The End =============
