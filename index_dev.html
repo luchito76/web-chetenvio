@@ -878,7 +878,7 @@
                     subject,
                     message
                 };
-                $.post('http://192.168.0.15:3002/api/modules/email/email', data, function (data, status) {
+                $.post('https://ec2-15-228-18-40.sa-east-1.compute.amazonaws.com:3002/api/modules/email/email', data, function (data, status) {
                     alert("Data: " + data + "\nStatus: " + status);
                     if (status === 'success') {
                         $('#loadMsg').hide();
@@ -1013,7 +1013,7 @@
     <script type="text/javascript">
         $(function () {
             $('#myDiv').floatingWhatsApp({
-                phone: '5491133359850',
+                phone: '1164828741',
                 popupMessage: 'Hola, que querés enviar?',
                 showPopup: true
             });
