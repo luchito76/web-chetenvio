@@ -879,7 +879,7 @@
                     message
                 };
 
-                
+
 
                 $.ajax({
                     type: "POST",
@@ -887,11 +887,14 @@
                     dataType: "json",
                     crossDomain: "true",
                     contentType: "application/json; charset=utf-8",
-                    data: JSON.stringify(data),
+                    data: JSON.stringify(data),                    
 
-                    success: function () {
+                    success: function (data) {
                         // clear form and show a success message
-                        alert("Thanks for the email! We will contact you soon.");
+                        alert("Thanks for the email! We will contact you soon." + data);
+                        $('#loadMsg').hide();
+                        $('#inTurnFadingTextG').hide();
+                        $('#msgSubmit').show();
                         document.getElementById("contact-form").reset();
                     },
                     error: function () {
