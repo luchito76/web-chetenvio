@@ -889,9 +889,9 @@
                     contentType: "application/json; charset=utf-8",
                     data: JSON.stringify(data),                    
 
-                    success: function (data) {
+                    success: function (res) {
                         // clear form and show a success message
-                        alert("Thanks for the email! We will contact you soon." + data);
+                        alert("Thanks for the email! We will contact you soon." + JSON.stringify(res));
                         $('#loadMsg').hide();
                         $('#inTurnFadingTextG').hide();
                         $('#msgSubmit').show();
