@@ -878,7 +878,7 @@
                     subject,
                     message
                 };
-                $.post('http://localhost/api/modules/email/email', data, function (data, status) {
+                $.post('http://ec2-15-228-18-40.sa-east-1.compute.amazonaws.com/api/modules/email/email', data, function (data, status) {
                     alert("Data: " + data + "\nStatus: " + status);
                     if (status === 'success') {
                         $('#loadMsg').hide();
