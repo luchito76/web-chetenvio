@@ -618,7 +618,7 @@
                 <div class="col-12 col-md-8">
                     <div class="contact-form-area">
                         <h2>Contactanos!</h2>
-                        <form method="POST" id="contact-form">
+                        <form method="post" id="contact-form">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <input type="text" class="form-control" name="name" id="name"
@@ -878,19 +878,37 @@
                     subject,
                     message
                 };
-                $.post('https://ec2-15-228-18-40.sa-east-1.compute.amazonaws.com/api/modules/email/email', data, function (data, status) {
-                    alert("Data: " + data + "\nStatus: " + status);
-                    if (status === 'success') {
-                        $('#loadMsg').hide();
-                        $('#inTurnFadingTextG').hide();
-                        $('#msgSubmit').show();
-                        formSuccess();
-                    } else {
-                        setTimeout(function () {
-                            $("#msgError").delay('1500').fadeOut('slow');
-                        }, 4000);
+                $.ajax({
+                    type: "POST",
+                    url: 'https://suwp2j1811.execute-api.ap-southeast-1.amazonaws.com/production/email',
+                    dataType: "json",
+                    crossDomain: "true",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(data),
+
+                    success: function () {
+                        // clear form and show a success message
+                        alert("Thanks for the email! We will contact you soon.");
+                        document.getElementById("contact-form").reset();
+                    },
+                    error: function () {
+                        // show an error message
+                        alert("Please try again, thanks!");
                     }
                 });
+                // $.post('https://ec2-15-228-18-40.sa-east-1.compute.amazonaws.com/api/modules/email/email', data, function (data, status) {
+                //     alert("Data: " + data + "\nStatus: " + status);
+                //     if (status === 'success') {
+                //         $('#loadMsg').hide();
+                //         $('#inTurnFadingTextG').hide();
+                //         $('#msgSubmit').show();
+                //         formSuccess();
+                //     } else {
+                //         setTimeout(function () {
+                //             $("#msgError").delay('1500').fadeOut('slow');
+                //         }, 4000);
+                //     }
+                // });
             }
         }
 
