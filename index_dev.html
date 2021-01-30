@@ -879,19 +879,15 @@
                     message
                 };
 
-
-
                 $.ajax({
                     type: "POST",
                     url: 'https://k5anq7by5c.execute-api.sa-east-1.amazonaws.com/produccion/email',
                     dataType: "json",
                     crossDomain: "true",
                     contentType: "application/json; charset=utf-8",
-                    data: JSON.stringify(data),                    
+                    data: JSON.stringify(data),
 
                     success: function (res) {
-                        // clear form and show a success message
-                        alert("Thanks for the email! We will contact you soon." + JSON.stringify(res));
                         $('#loadMsg').hide();
                         $('#inTurnFadingTextG').hide();
                         $('#msgSubmit').show();
@@ -899,22 +895,9 @@
                     },
                     error: function () {
                         // show an error message
-                        alert("Please try again, thanks!");
+                        // alert("Please try again, thanks!");
                     }
                 });
-                // $.post('https://ec2-15-228-18-40.sa-east-1.compute.amazonaws.com/api/modules/email/email', data, function (data, status) {
-                //     alert("Data: " + data + "\nStatus: " + status);
-                //     if (status === 'success') {
-                //         $('#loadMsg').hide();
-                //         $('#inTurnFadingTextG').hide();
-                //         $('#msgSubmit').show();
-                //         formSuccess();
-                //     } else {
-                //         setTimeout(function () {
-                //             $("#msgError").delay('1500').fadeOut('slow');
-                //         }, 4000);
-                //     }
-                // });
             }
         }
 
