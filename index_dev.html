@@ -878,7 +878,7 @@
                     subject,
                     message
                 };
-                $.post('https://localhost/api/modules/email/email', data, function (data, status) {
+                $.post('http://localhost/api/modules/email/email', data, function (data, status) {
                     alert("Data: " + data + "\nStatus: " + status);
                     if (status === 'success') {
                         $('#loadMsg').hide();
