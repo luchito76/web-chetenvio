@@ -670,6 +670,7 @@ img {
 	background-color: #40c1ac;
 	position: relative;
 	z-index: 1;
+	text-align: left;
 }
 
 .features-img > img {
