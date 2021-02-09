@@ -1828,7 +1828,7 @@ span.accor-open {
 .package {
 	box-sizing: border-box;
 	width: 301px;
-	height: 250px;
+	height: 220px;
 	border: 3px solid #e8e8e8;
 	border-radius: 7px;
 	display: inline-block;
@@ -1847,11 +1847,15 @@ span.accor-open {
 	transition: margin-top 0.3s linear;
 }
 
+.negocio {
+	margin: 0 40px 0 40px !important;
+}
+
 .name {
 	color: #565656;
-	font-weight: 300;
-	font-size: 2rem;
-	margin-top: -5px;
+	/* font-weight: 300; */
+	font-size: 1.5rem;
+	margin-top: 40px;
 }
 
 .price {
