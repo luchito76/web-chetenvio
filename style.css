@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,900');
 
 @import 'css/bootstrap.min.css';
 @import 'css/owl.carousel.min.css';
@@ -17,7 +17,7 @@
 
 body,
 html {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-align: center;
 }
 
@@ -27,8 +27,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 	color: #404551;
 	line-height: 1.2;
 }
@@ -48,7 +48,7 @@ li {
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #abadbe;
 	font-size: 15px;
 	font-weight: 500;
@@ -93,6 +93,19 @@ img {
 	height: 65px;
 	padding-bottom: 10px;
 	margin-bottom: 0px;
+}
+
+.serv-logo {
+	text-align: center;
+	height: 35%;
+	margin-top: 15px;
+}
+
+.cinco {
+	/* width: 8vw; */
+	/* height: 35px; */
+	padding-bottom: 10px;
+	margin-right: -10px;
 }
 
 .mosh-about-us-thumb {
@@ -1717,7 +1730,7 @@ span.accor-open {
 }
 
 .contact-form-area .form-control {
-	font-size: 14px;	
+	font-size: 14px;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -1725,7 +1738,7 @@ span.accor-open {
 	border-radius: 0;
 	height: 50px;
 	margin-bottom: 10px;
-	padding: 15px;	
+	padding: 15px;
 }
 
 .contact-form-area .form-control:hover,
@@ -1827,7 +1840,7 @@ span.accor-open {
 
 .package {
 	box-sizing: border-box;
-	width: 301px;
+	width: 315px;
 	height: 220px;
 	border: 3px solid #e8e8e8;
 	border-radius: 7px;
@@ -1855,7 +1868,7 @@ span.accor-open {
 	color: #565656;
 	/* font-weight: 300; */
 	font-size: 1.5rem;
-	margin-top: 40px;
+	/* margin-top: 40px; */
 }
 
 .price {
