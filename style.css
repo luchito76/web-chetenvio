@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,900');
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,500,700,900'); */
+/* @import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap'); */
+/* <link rel="preconnect" href="https://fonts.gstatic.com"> */
+/* <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> */
 
 @import 'css/bootstrap.min.css';
 @import 'css/owl.carousel.min.css';
@@ -17,7 +21,7 @@
 
 body,
 html {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Merriweather', serif;
 	text-align: center;
 }
 
@@ -27,8 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
 	color: #404551;
 	line-height: 1.2;
 }
@@ -48,12 +52,12 @@ li {
 }
 
 p {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Merriweather', serif;
 	color: #abadbe;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 500;
 	margin-top: 0;
-	line-height: 1.9;
+	line-height: 1.5;
 }
 
 ul,
@@ -460,7 +464,7 @@ img {
 .menu_area #nav .nav-link {
 	color: #40c1ac;
 	display: block;
-	font-size: 15px;
+	font-size: 18px;
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
 	padding: 0 15px;
@@ -1832,7 +1836,7 @@ span.accor-open {
 	top: 50%;
 	left: 50%;
 	/* margin: -190px 0 0 -468px; */
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Merriweather', serif;
 	font-weight: 400;
 	color: #9f9f9f;
 	font-size: 15px;
