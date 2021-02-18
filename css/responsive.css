@@ -4,7 +4,7 @@
 */
 @media (min-width: 1901px) and (max-width: 2040px) {
 	.cinco {
-		width: 7vw;		
+		width: 7vw;
 	}
 }
 
@@ -152,8 +152,22 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	.cuatro {
+		width: 40vw;
+		height: 110px;
+		margin-bottom: 0px;
+	}
 	.cinco {
 		width: 20vw;
+	}
+	.name {
+		font-size: 1.3rem;
+		margin-top: 40px;
+	}
+
+	.serv-logo {
+		margin-top: 40px;
+		height: 20%;
 	}
 	/* .centrado {
 		position: absolute;

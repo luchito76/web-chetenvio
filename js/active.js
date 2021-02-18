@@ -20,14 +20,14 @@
 	if ($.fn.owlCarousel) {
 		$('.mosh-service-slides').owlCarousel({
 			items: 3,
-			loop: false,
-			autoplay: false,
+			loop: true,
+			autoplay: true,
 			smartSpeed: 800,
 			margin: 30,
-			center: true,
+			center: false,
 			dots: false,
 			nav: true,
-			startPosition: 1,
+			startPosition: 3,
 			navText: [
 				'<i class="fa fa-chevron-left" aria-hidden="true"></i>',
 				'<i class="fa fa-chevron-right" aria-hidden="true"></i>'
@@ -54,7 +54,7 @@
 			smartSpeed: 800,
 			margin: 30,
 			center: true,
-			dots: true,
+			dots: false,
 			startPosition: 1,
 			responsive: {
 				0: {
@@ -209,7 +209,7 @@
 		if ($window.scrollTop() > 0) {
 			$('.header_area').addClass('sticky');
 			$('.navbar .navbar-brand div img').attr('src', 'img/logos-img/logo1.svg');
-            $('.buscar-btn').addClass('buscar-btn-sticky');            
+			$('.buscar-btn').addClass('buscar-btn-sticky');
 			// $('.buscar-btn').removeClass('buscar-btn');
 		} else {
 			$('.header_area').removeClass('sticky');

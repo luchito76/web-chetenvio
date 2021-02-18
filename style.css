@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,500,700,900'); */
-/* @import url('https://fonts.gstatic.com');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap'); */
+
 /* <link rel="preconnect" href="https://fonts.gstatic.com"> */
 /* <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> */
 
@@ -21,7 +21,7 @@
 
 body,
 html {
-	font-family: 'Merriweather', serif;
+	font-family: 'Noto Sans', sans-serif;
 	text-align: center;
 }
 
@@ -31,8 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Merriweather', serif;
-	font-weight: 300;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
 	color: #404551;
 	line-height: 1.2;
 }
@@ -52,9 +52,9 @@ li {
 }
 
 p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Noto Sans', sans-serif;
 	color: #abadbe;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	margin-top: 0;
 	line-height: 1.5;
@@ -102,7 +102,7 @@ img {
 .serv-logo {
 	text-align: center;
 	height: 35%;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .cinco {
@@ -1099,6 +1099,10 @@ span.accor-open {
 	height: 60px;
 }
 
+.footer-title {
+	padding: 25px 0 25px 0;
+}
+
 /* --------------------
 :: 13.0 Breadcumb CSS
 -------------------- */
@@ -1836,7 +1840,7 @@ span.accor-open {
 	top: 50%;
 	left: 50%;
 	/* margin: -190px 0 0 -468px; */
-	font-family: 'Merriweather', serif;
+	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	color: #9f9f9f;
 	font-size: 15px;
@@ -1938,7 +1942,7 @@ hr {
 }
 .inTurnFadingTextG {
 	color: #cad529;
-	font-family: Arial;
+	font-family: 'Noto Sans', sans-serif;
 	font-size: 24px;
 	text-decoration: none;
 	font-weight: 400;
@@ -2100,6 +2104,7 @@ hr {
 
 .accordion__content-inner {
 	padding: 0 40px 10px 40px;
+	text-align: left;
 }
 
 .accordion__content {
@@ -2139,6 +2144,10 @@ hr {
 
 .frase-arbol {
 	font-size: 2em !important;
+}
+
+.mailto {
+	color: #fff;
 }
 /* --------------------------------
 ============= The End =============
