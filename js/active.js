@@ -183,7 +183,7 @@
 
 	if ($.fn.scrollUp) {
 		$.scrollUp({
-			scrollSpeed: 1500,
+			scrollSpeed: 2500,
 			scrollText: '<i class="fa fa-angle-up"></i>'
 		});
 	}
