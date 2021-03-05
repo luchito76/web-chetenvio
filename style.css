@@ -437,7 +437,7 @@ img {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	image-orientation: from-image
+	image-orientation: from-image;
 }
 
 /* --------------------------
@@ -1046,6 +1046,11 @@ span.accor-open {
 }
 
 .copyright-text > p {
+	margin-bottom: 0;
+	font-size: 13px;
+}
+
+.politicas-term > p {
 	margin-bottom: 0;
 	font-size: 13px;
 }
@@ -2149,6 +2154,19 @@ hr {
 
 .mailto {
 	color: #fff;
+}
+
+.politicas {
+	text-align: left;
+	margin-top: 30px;
+}
+.politicas-ul > li {
+	list-style-type: disc;
+	text-align: left;
+	color:#abadbe
+}
+.mail-politicas {
+	text-align: left;
 }
 /* --------------------------------
 ============= The End =============
