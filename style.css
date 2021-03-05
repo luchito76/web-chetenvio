@@ -291,10 +291,10 @@ img {
 	z-index: 999999;
 }
 
-.mosh-preloader {
+.chet-preloader {
 	overflow: hidden;
-	-webkit-animation: 3000ms linear 0s normal none infinite running mosh-preloader;
-	animation: 3000ms linear 0s normal none infinite running mosh-preloader;
+	-webkit-animation: 3000ms linear 0s normal none infinite running chet-preloader;
+	animation: 3000ms linear 0s normal none infinite running chet-preloader;
 	background-color: transparent;
 	border-color: #f1f2f3 #f1f2f3 #40c1ac;
 	border-radius: 50%;
@@ -308,7 +308,7 @@ img {
 	z-index: 9;
 }
 
-@-webkit-keyframes mosh-preloader {
+@-webkit-keyframes chet-preloader {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
@@ -319,7 +319,7 @@ img {
 	}
 }
 
-@keyframes mosh-preloader {
+@keyframes chet-preloader {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
@@ -391,7 +391,7 @@ img {
 	font-weight: 500;
 }
 
-.mosh-btn {
+.chet-btn {
 	background-color: #40c1ac;
 	min-width: 150px;
 	height: 54px;
@@ -406,7 +406,7 @@ img {
 	transition-duration: 500ms;
 }
 
-.mosh-btn:hover {
+.chet-btn:hover {
 	background-color: #a5e2d8;
 	color: #fff;
 }
@@ -626,7 +626,7 @@ img {
 :: 4.0 Service Area
 ------------------------- */
 
-.mosh-service-slides {
+.chet-service-slides {
 	position: relative;
 	z-index: 1;
 }
@@ -640,7 +640,7 @@ img {
 	color: #40c1ac;
 }
 
-.mosh-service-slides .center .single-service-area h2,
+.chet-service-slides .center .single-service-area h2,
 .single-service-area:hover h2 {
 	color: #40c1ac;
 }
@@ -649,8 +649,8 @@ img {
 	margin-bottom: 20px;
 }
 
-.mosh-service-slides .owl-prev,
-.mosh-service-slides .owl-next {
+.chet-service-slides .owl-prev,
+.chet-service-slides .owl-next {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -666,7 +666,7 @@ img {
 	transition-duration: 500ms;
 }
 
-.mosh-service-slides .owl-next {
+.chet-service-slides .owl-next {
 	left: auto;
 	right: -25px;
 }
@@ -920,7 +920,7 @@ img {
 :: 10.0 CTA Area
 ------------------------- */
 
-.mosh-call-to-action-area {
+.chet-call-to-action-area {
 	position: relative;
 	z-index: 1;
 	background-attachment: fixed;
@@ -1788,28 +1788,28 @@ span.accor-open {
 	font-size: 24px;
 }
 
-.mosh-btn.mosh-btn-2 {
+.chet-btn.chet-btn-2 {
 	border: 2px solid #4a7aec;
 	color: #404551;
 	background-color: #fff;
 }
 
-.mosh-btn.mosh-btn-2:hover,
-.mosh-btn.mosh-btn-2:focus {
+.chet-btn.chet-btn-2:hover,
+.chet-btn.chet-btn-2:focus {
 	border: 2px solid #4a7aec;
 	color: #fff;
 	background-color: #4a7aec;
 }
 
-.mosh-btn.mosh-btn-3 {
+.chet-btn.chet-btn-3 {
 	border: none;
 	color: #404551;
 	background-color: #fff;
 	box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
 }
 
-.mosh-btn.mosh-btn-3:hover,
-.mosh-btn.mosh-btn-3:focus {
+.chet-btn.chet-btn-3:hover,
+.chet-btn.chet-btn-3:focus {
 	color: #fff;
 	background-color: #4a7aec;
 }
@@ -2163,7 +2163,7 @@ hr {
 .politicas-ul > li {
 	list-style-type: disc;
 	text-align: left;
-	color:#abadbe
+	color: #abadbe;
 }
 .mail-politicas {
 	text-align: left;
