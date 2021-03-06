@@ -227,6 +227,8 @@
 	}
 	.hero-slide-content .slide-img {
 		margin-top: 80px;
+		width: 320px;
+		height: 174px;
 	}
 	.package {
 		width: 80%;
