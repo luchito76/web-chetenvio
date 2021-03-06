@@ -4,7 +4,6 @@
 /* <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet"> */
 
-
 /* <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> */
 
 @import 'css/bootstrap.min.css';
@@ -294,10 +293,10 @@ img {
 	z-index: 999999;
 }
 
-.chet-preloader {
+.mosh-preloader {
 	overflow: hidden;
-	-webkit-animation: 3000ms linear 0s normal none infinite running chet-preloader;
-	animation: 3000ms linear 0s normal none infinite running chet-preloader;
+	-webkit-animation: 3000ms linear 0s normal none infinite running mosh-preloader;
+	animation: 3000ms linear 0s normal none infinite running mosh-preloader;
 	background-color: transparent;
 	border-color: #f1f2f3 #f1f2f3 #40c1ac;
 	border-radius: 50%;
@@ -311,7 +310,7 @@ img {
 	z-index: 9;
 }
 
-@-webkit-keyframes chet-preloader {
+@-webkit-keyframes mosh-preloader {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
@@ -322,7 +321,7 @@ img {
 	}
 }
 
-@keyframes chet-preloader {
+@keyframes mosh-preloader {
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
@@ -394,7 +393,7 @@ img {
 	font-weight: 500;
 }
 
-.chet-btn {
+.mosh-btn {
 	background-color: #40c1ac;
 	min-width: 150px;
 	height: 54px;
@@ -409,7 +408,7 @@ img {
 	transition-duration: 500ms;
 }
 
-.chet-btn:hover {
+.mosh-btn:hover {
 	background-color: #a5e2d8;
 	color: #fff;
 }
@@ -629,7 +628,7 @@ img {
 :: 4.0 Service Area
 ------------------------- */
 
-.chet-service-slides {
+.mosh-service-slides {
 	position: relative;
 	z-index: 1;
 }
@@ -643,7 +642,7 @@ img {
 	color: #40c1ac;
 }
 
-.chet-service-slides .center .single-service-area h2,
+.mosh-service-slides .center .single-service-area h2,
 .single-service-area:hover h2 {
 	color: #40c1ac;
 }
@@ -652,8 +651,8 @@ img {
 	margin-bottom: 20px;
 }
 
-.chet-service-slides .owl-prev,
-.chet-service-slides .owl-next {
+.mosh-service-slides .owl-prev,
+.mosh-service-slides .owl-next {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -669,7 +668,7 @@ img {
 	transition-duration: 500ms;
 }
 
-.chet-service-slides .owl-next {
+.mosh-service-slides .owl-next {
 	left: auto;
 	right: -25px;
 }
@@ -923,7 +922,7 @@ img {
 :: 10.0 CTA Area
 ------------------------- */
 
-.chet-call-to-action-area {
+.mosh-call-to-action-area {
 	position: relative;
 	z-index: 1;
 	background-attachment: fixed;
@@ -1791,28 +1790,28 @@ span.accor-open {
 	font-size: 24px;
 }
 
-.chet-btn.chet-btn-2 {
+.mosh-btn.mosh-btn-2 {
 	border: 2px solid #4a7aec;
 	color: #404551;
 	background-color: #fff;
 }
 
-.chet-btn.chet-btn-2:hover,
-.chet-btn.chet-btn-2:focus {
+.mosh-btn.mosh-btn-2:hover,
+.mosh-btn.mosh-btn-2:focus {
 	border: 2px solid #4a7aec;
 	color: #fff;
 	background-color: #4a7aec;
 }
 
-.chet-btn.chet-btn-3 {
+.mosh-btn.mosh-btn-3 {
 	border: none;
 	color: #404551;
 	background-color: #fff;
 	box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
 }
 
-.chet-btn.chet-btn-3:hover,
-.chet-btn.chet-btn-3:focus {
+.mosh-btn.mosh-btn-3:hover,
+.mosh-btn.mosh-btn-3:focus {
 	color: #fff;
 	background-color: #4a7aec;
 }
@@ -1836,7 +1835,7 @@ span.accor-open {
 	max-width: 20%;
 }
 
-.chete {
+.mosh {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 33%;
 	flex: 0 0 33%;

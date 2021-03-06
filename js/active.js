@@ -18,7 +18,7 @@
 	}
 
 	if ($.fn.owlCarousel) {
-		$('.chet-service-slides').owlCarousel({
+		$('.mosh-service-slides').owlCarousel({
 			items: 3,
 			loop: true,
 			autoplay: true,
