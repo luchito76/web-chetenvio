@@ -99,7 +99,7 @@
 		text-align: left;
 	}
 	.header_area.sticky .navbar {
-		height: 70px;
+		height: 70px !important;
 	}
 	.menu_area #nav .nav-link {
 		font-size: 14px;
