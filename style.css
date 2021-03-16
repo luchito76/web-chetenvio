@@ -2392,7 +2392,7 @@ video {
 	max-width: 1200px;
 
 	/* border-bottom: 5px solid transparent; */
-	box-shadow: 0px 15px 15px -3px #4e4e4e;
+	box-shadow: 0px 5px 25px -3px #4e4e4e;
 }
 /* Y así se adaptaría al 100% del ancho de página (para webs móviles sería útil) */
 
