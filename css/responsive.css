@@ -164,6 +164,13 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	.video-responsive {
+		position: relative;
+		/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
+		padding-bottom: 70.25%;
+		height: 0;
+		overflow: hidden;
+	}
 	.cuatro {
 		width: 40vw;
 		height: 110px;
