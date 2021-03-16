@@ -20,8 +20,8 @@
 	if ($.fn.owlCarousel) {
 		$('.mosh-service-slides').owlCarousel({
 			items: 3,
-			loop: true,
-			autoplay: true,
+			loop: false,
+			autoplay: false,
 			smartSpeed: 800,
 			margin: 30,
 			center: false,

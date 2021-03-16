@@ -2192,7 +2192,7 @@ nav .logo em {
 	font-weight: 200;
 } */
 
-nav {
+/* nav {
 	background: rgba(250, 250, 250, 0.2);
 	height: 80px;
 	position: fixed;
@@ -2274,10 +2274,10 @@ nav .nav-item.active .nav-link {
 
 .menu-icon.active span:after {
 	transform: rotate(-135deg);
-}
+} */
 /* Menu */
 
-.overlay-menu {
+/* .overlay-menu {
 	background: rgba(0, 0, 0, 0.95);
 	color: #ffffff;
 	position: fixed;
@@ -2359,7 +2359,7 @@ nav .nav-item.active .nav-link {
 	font-weight: 200;
 	letter-spacing: 0.5px;
 	text-align: center;
-}
+} */
 
 #video-container {
 	position: relative;
@@ -2370,74 +2370,10 @@ nav .nav-item.active .nav-link {
 	/* padding-top: 1000px; */
 }
 
-#video-container video,
-.video-overlay {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	min-width: 100%;
-	min-height: 100%;
-}
-
-#video-container .video-overlay {
-	z-index: 9999;
-	background: rgba(0, 0, 0, 0.5);
-	width: 100%;
-}
-
-#video-container .video-content {
-	z-index: 99999;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-
-#video-container .video-content .inner {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
-}
-
-#video-container .video-content .inner h1 {
-	font-size: 64px;
-	text-transform: uppercase;
-	color: #fff;
-	letter-spacing: 2px;
-	font-weight: 500;
-	text-align: center;
-}
-
-#video-container .video-content .inner em {
-	font-style: normal;
-	font-weight: 200;
-}
-
-#video-container .video-content .inner p {
-	color: #fff;
-	font-size: 22px;
-	font-weight: 200;
-	letter-spacing: 1.5px;
-	text-align: center;
-	padding: 0px 30px;
-}
-
-#video-container .video-content .inner a {
-	color: #fff;
-	text-decoration: underline;
-}
-
-#video-container .video-content .inner .scroll-icon {
-	/* margin-top: 45px; */
-}
-
 .video-responsive {
 	position: relative;
-	padding-bottom: 56.25%; /* 16/9 ratio */
-	
+	/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
+	padding-bottom: 46.25%;
 	height: 0;
 	overflow: hidden;
 }
@@ -2448,18 +2384,16 @@ nav .nav-item.active .nav-link {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 500%;
+	width: 50%;
 	height: 50%;
 }
 
-video{
-	width:100%;
-	max-width:600px;
-	}
-	/* Y así se adaptaría al 100% del ancho de página (para webs móviles sería útil) */
-	video{
-	width:100%;
-	}
+video {
+	width: 100%;
+	max-width: 1200px;
+}
+/* Y así se adaptaría al 100% del ancho de página (para webs móviles sería útil) */
+
 /* --------------------------------
 ============= The End =============
 ---------------------------------*/

@@ -12,6 +12,14 @@
 	.cinco {
 		width: 9vw;
 	}
+	.video-responsive {
+		position: relative;
+		/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+	}
+	
 }
 
 @media (min-width: 1281px) {
@@ -39,10 +47,14 @@
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1280px) {
-	/* .cinco {
-		width: 15vw;
-	} */
+@media (min-width: 992px) and (max-width: 1280px) {	
+	.video-responsive {
+		position: relative;
+		/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
+		padding-bottom: 65.25%;
+		height: 0;
+		overflow: hidden;
+	}
 	.cinco {
 		width: 11vw;
 	}
@@ -398,6 +410,14 @@
 		height: 65px;
 		padding-bottom: 5px;
 		margin-bottom: 0px;
+	}
+
+	.video-responsive {
+		position: relative;
+		/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
 	}
 
 	.google-play-btn {
