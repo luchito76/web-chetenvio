@@ -92,7 +92,7 @@ border-radius: 180px;
 padding-bottom:50px;
 }
 .logo h1{
-color:#40C1AC;
+color:#5CC9BA;
 font-weight:600;
 
 }
@@ -209,9 +209,9 @@ font-size: 14px;
 color: #888;
 }
 #subscribe input[type="button"]:hover{
-background:#40C1AC;
+background:#5CC9BA;
 color:#fff;
-border:1px solid #40C1AC;
+border:1px solid #5CC9BA;
 }
 
 .callback,
@@ -233,7 +233,7 @@ border:1px solid #40C1AC;
 .countdown {
 text-align: center;
 margin-top: 30px;
-background: #40C1AC;
+background: #5CC9BA;
 padding: 60px 0;
 } 
 .styled div {
