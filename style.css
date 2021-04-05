@@ -2166,11 +2166,13 @@ hr {
 	list-style-type: disc;
 	text-align: left;
 	color: #abadbe;
+	margin-left: 12px;
 }
 .politicas-restricciones-ul > li {
 	list-style-type: decimal;
 	text-align: left;
 	color: #abadbe;
+	margin-left: 12px;
 }
 .mail-politicas {
 	text-align: left;
