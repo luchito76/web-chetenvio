@@ -2406,6 +2406,45 @@ video:focus {
 	outline: none;
 }
 
+/* /*********************** Video Servicios ******************************** */
+#video-container-servicios {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.video-responsive-servicios {
+	position: relative;
+	/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
+	padding-bottom: 46.25%;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-responsive-servicios iframe,
+.video-responsive-servicios object,
+.video-responsive-servicios embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: 25%;
+}
+
+.video-servicio {
+	width: 100%;
+	max-width: 300px;
+
+	/* border-bottom: 5px solid transparent; */
+	box-shadow: 0px 5px 25px -3px #4e4e4e;
+}
+
+.video-servicio:focus {
+	outline: none;
+}
+
 /* Y así se adaptaría al 100% del ancho de página (para webs móviles sería útil) */
 
 /* --------------------------------
