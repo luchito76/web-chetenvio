@@ -52,9 +52,15 @@
                                 <ul class="navbar-nav animated" id="nav">
                                     <li class="nav-item active"><a class="nav-link" href="#inicio">Inicio</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#quienes_somos">Quiénes somos</a>
+                                    <li class="nav-item"><a class="nav-link" href="index.html#quienes_somos">Quiénes
+                                            somos</a>
                                     </li>
+                                    <li class="nav-item"><a class="nav-link" href="e-commerce.html">e-Commerce</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="empresas.html">Empresas</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="paravos.html">Para Vos</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                                    <li class="nav-item"><a class="btn-core" target="_blank"
+                                            href="https://core.chetenvio.com/">Ingresar</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -66,27 +72,43 @@
 
     <section class="welcome_area section_padding_0_50 clearfix" id="inicio">
         <div class="hero-slides owl-carousel">
-            <div class=" d-flex align-items-end justify-content-center">
-                <div class="hero-slide-content text-center">
-                    <img class="slide-img" src="img/bici-img/img99.webp" width="1900" height="910"
+            <div class="d-flex align-items-end justify-content-center">
+                <div id="imgSlide" class="hero-slide-content text-center vertical-center">
+                    <img id="imageSlide" class="slide-img" src="img/bici-img/img99.webp" width="1900" height="910"
                         alt="ChetEnvío Neuquén">
+                    <div id="overlay"></div>
+                    <h1 id="imgText" class="mb-50">e-Commerce</h1>
+                    <h1 id="imgText1" class="mb-50">Servicios de envíos confiables y rápidos</h1>
+                    <button id="imgButton" class="btn-ecommerce mosh-btn mt-50">Solicitar una Demo</button>
                 </div>
             </div>
             <div class="d-flex align-items-end justify-content-center">
-                <div class="hero-slide-content text-center">
-                    <img class="slide-img" src="img/bici-img/img97.webp" width="1900" height="910"
+                <div id="imgSlide" class="hero-slide-content text-center">
+                    <img id="imageSlide" class="slide-img" src="img/bici-img/img97.webp" width="1900" height="910"
                         alt="ChetEnvío Neuquén">
+                    <div id="overlay"></div>
+                    <h1 id="imgText">e-Commerce</h1>
+                    <h3 id="imgText1">Servicios de envíos confiables y rápidos</h3>
+                    <button id="imgButton" class="btn-ecommerce mosh-btn mt-50">Solicitar una Demo</button>
                 </div>
             </div>
             <div class="d-flex align-items-end justify-content-center">
-                <div class="hero-slide-content text-center">
-                    <img class="slide-img" src="img/bici-img/img98.webp" width="1900" height="910" alt=" ">
+                <div id="imgSlide" class="hero-slide-content text-center">
+                    <img id="imageSlide" class="slide-img" src="img/bici-img/img98.webp" width="1900" height="910"
+                        alt=" ">
+                    <div id="overlay"></div>
+                    <h1 id="imgText">e-Commerce</h1>
+                    <h3 id="imgText1">Servicios de envíos confiables y rápidos</h3>
+                    <a id="imgButton" href="#contacto" class="btn-ecommerce mosh-btn mt-50">Solicitar una Demo</a>
+                    <!-- <button id="imgButton" class="btn-ecommerce mosh-btn mt-50">Solicitar una Demo</button> -->
                 </div>
             </div>
+
         </div>
+
     </section>
 
-    <section class="section_padding_50_50">
+    <section id="servicios" class="section_padding_50_50">
         <div class="container">
             <!-- <div class="section"> -->
 
@@ -103,10 +125,10 @@
                         <h2 class="chetenvio-text"><i class="chetenvio-icon material-icons">work</i></h2>
                         <h3 style="text-align: center;">Envíos de paquetes y productos</h3>
 
-                        <p class="ecommerce-text">Gestiona tus envíos de mercadería u objetos de forma rápida, segura y
+                        <p class="ecommerce-text">Gestioná tus envíos de mercadería u objetos de forma rápida, segura y
                             flexible.
                             Despachamos envíos y hacemos entregas en el mismo día, en menos de 24 o 72hs. Vos
-                            elegis.
+                            elegís.
                         </p>
                     </div>
                 </div>
@@ -116,11 +138,11 @@
                         <h2 class="chetenvio-text"><i class="chetenvio-icon material-icons">
                                 timeline
                             </i></h2>
-                        <h3 style="text-align: center;">Aumenta el volumen de tus ventas</h3>
+                        <h3 style="text-align: center;">Aumentá el volumen de tus ventas</h3>
 
-                        <p class="ecommerce-text">Aumenta tus ventas y reduce los tiempos de entrega a tus clientes. Con
-                            ChetEnvio podes generar rutas de distribucion optimas
-                            que te permiten minimizar los costos por entrega y asegurar la calidad de tus envíos.
+                        <p class="ecommerce-text">Aumentá tus ventas y reduce los tiempos de entrega a tus clientes. Con
+                            ChetEnvío podés generar rutas de distribución óptimas que te permiten minimizar los costos
+                            por entrega y asegurar la calidad de tus envíos.
                         </p>
                     </div>
                 </div>
@@ -128,12 +150,10 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="icon-block">
                         <h2 class="chetenvio-text"><i class="chetenvio-icon material-icons">settings</i></h2>
-                        <h3 style="text-align: center;">Seguimiento de envios en tiempo real</h3>
+                        <h3 style="text-align: center;">Seguimiento de envíos en tiempo real</h3>
 
-                        <p class="ecommerce-text">Visualiza en tiempo real todos los vehiculos y el recorrido de cada
-                            uno de
-                            tus
-                            Drivers ademas del estado de las entregas.
+                        <p class="ecommerce-text">Visualizá en tiempo real todos los vehículos y el recorrido de cada
+                            uno de tus Drivers además del estado de las entregas.
                         </p>
                     </div>
                 </div>
@@ -152,7 +172,7 @@
                 <div class="col-12">
                     <div class="cta-content text-center wow fadeIn" data-wow-delay="0.5s">
                         <div class="section-heading">
-                            <h2>¡Sin incertidumbre! Tus clientes visualizan en tiempo real el estado de su envio.</h2>
+                            <h2>¡Sin incertidumbre! Tus clientes visualizan en tiempo real el estado de su envío.</h2>
                             <h2></h2>
                         </div>
                     </div>
@@ -185,7 +205,7 @@
                     <img class="d-block w-100" src="img/core-img/img_core.png" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h3>ChetEnvío</h3>
-                        <p class="ecommerce-text">Te ofrecemos herramientas tecnologicas que te permite optimizar el
+                        <p class="ecommerce-text">Te ofrecemos herramientas tecnológicas que te permiten optimizar el
                             proceso, reducir costos y
                             ofrecer un servicio de calidad a precios competitivos</p>
                     </div>
@@ -217,8 +237,8 @@
                 <div class="col-12">
                     <div class="cta-content text-center wow fadeIn" data-wow-delay="0.5s">
                         <div class="section-heading">
-                            <h2>ChetEnvio te ofrece soluciones tecnologicas para optimizar las hojas de ruta, hacer
-                                monitoreo en tiempo real y comunicar a tus clientes el estado de tus envios.</h2>
+                            <h2>ChetEnvío te ofrece soluciones tecnológicas para optimizar las hojas de ruta, hacer
+                                monitoreo en tiempo real y comunicar a tus clientes el estado de tus envíos.</h2>
                             <h2></h2>
                         </div>
                     </div>
@@ -232,7 +252,7 @@
             <div class="row">
                 <div class="col-12 col-md-12">
                     <div class="contact-form-area">
-                        <h2>Contactanos C!</h2>
+                        <h2>Contactanos</h2>
                         <form method="post" id="contact-form">
                             <div class="row">
                                 <div class="col-12 col-md-6">
@@ -265,8 +285,8 @@
                                         placeholder="Envianos tu consulta..." required></textarea>
                                 </div>
 
-                                <div class="col-12">
-                                    <button class="btn mosh-btn mt-50" type="submit">Enviar</button>
+                                <div style="text-align: center;" class="col-12">
+                                    <button class="mosh-btn mt-50" type="submit">Enviar</button>
                                 </div>
 
                             </div>
@@ -314,33 +334,38 @@
         <div class="top-footer-area section_padding_50_50">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-12">
+                    <div style="text-align: center;" class="col-12 col-sm-6 col-lg-12">
                         <img class="cuatro" src="img/logos-img/logo1.svg" alt="">
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-100 objetfit">
+                    <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div style="text-align: center;" class="single-footer-widget mb-100 objetfit">
                             <h5 class="footer-title">Empresa</h5>
-                            <p>Nuestro servicio esta enfocado en la entrega rápida de cualquier encomienda pequeña y
+                            <p class="ecommerce-text">Nuestro servicio esta enfocado en la entrega rápida de cualquier
+                                encomienda pequeña y
                                 mediana, dentro del corazón urbano. Nuestra fortaleza es realizar la mayor cantidad de
-                                entregas posibles en esta última milla,  utilizando nuestros Vehículos Electricos de
+                                entregas posibles en esta última milla, utilizando nuestros Vehículos Electricos de
                                 Carga Urbana (VECU).
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-100">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div style="text-align: center;" class="single-footer-widget mb-100">
                             <h5 class="footer-title">Links</h5>
                             <ul>
                                 <li><a href="#inicio">Inicio</a></li>
                                 <li><a href="#servicios">Servicios </a></li>
-                                <li><a href="#quienes_somos">Quiénes Somos</a></li>
+                                <li><a href="index.html#quienes_somos">Quiénes Somos</a></li>
+                                <li><a href="e-commerce.html">e-Commerce</a></li>
+                                <li><a href="empresas.html">Empresas</a></li>
+                                <li><a href="paravos.html">Para Vos</a></li>
                                 <li><a href="#contacto">Contacto </a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-100">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div style="text-align: center;" class="single-footer-widget mb-100">
                             <h5 class="footer-title">Contacto</h5>
                             <div class="footer-single-contact-info d-flex">
                                 <div class="contact-icon">
@@ -351,8 +376,8 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-100">
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div style="text-align: center;" class="single-footer-widget mb-100">
                             <h5 class="footer-title">Redes</h5>
                             <div class="footer-single-contact-info d-flex">
                                 <div class="footer-social-info">
@@ -476,7 +501,7 @@
                 message: form.elements.message.value,
             };
             const errors = validate(formValues, constraints);
-            alert("Error: " + JSON.stringify(errors))
+
             if (errors) {
                 event.preventDefault();
                 $('#msgError').fadeIn();
@@ -510,7 +535,6 @@
 
                 $.ajax({
                     type: "POST",
-                    // url: 'https://k5anq7by5c.execute-api.sa-east-1.amazonaws.com/produccion/email',
                     url: 'https://8rmytw66xc.execute-api.sa-east-1.amazonaws.com/produccion/formEcomerce',
                     dataType: "json",
                     crossDomain: "true",
