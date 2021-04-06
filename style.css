@@ -555,8 +555,16 @@ img {
 	z-index: 2;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #5cc9ba !important;
+}
+
+.navbar-light .navbar-toggler { 
+	background-color: #f2f4f6;
+}
+
 .menu_area #nav .nav-link {
-	color: #5cc9ba;
+	/* color: #5cc9ba !important; */
 	display: block;
 	font-size: 18px;
 	-webkit-transition-duration: 500ms;
@@ -643,7 +651,7 @@ img {
 }
 
 .header_area.sticky .nav-link {
-	color: cornsilk !important;
+	color: #F8F2C6 !important;
 }
 
 /* --------------------------

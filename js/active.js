@@ -210,11 +210,14 @@
 			$('.header_area').addClass('sticky');
 			$('.navbar .navbar-brand div img').attr('src', 'img/logos-img/logo1.svg');
 			$('.buscar-btn').addClass('buscar-btn-sticky');
+			$('.menu_area #nav .nav-link').css('color', '#F8F2C6');	
+
 			// $('.buscar-btn').removeClass('buscar-btn');
 		} else {
 			$('.header_area').removeClass('sticky');
 			$('.navbar .navbar-brand div img').attr('src', 'img/logos-img/logo2.svg');
 			$('.buscar-btn').removeClass('buscar-btn-sticky');
+			$('.menu_area #nav .nav-link').css('color', '#5cc9ba');	
 			//  $('.buscar-btn').addClass('buscar-btn');
 		}
 	});

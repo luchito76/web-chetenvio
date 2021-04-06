@@ -19,7 +19,6 @@
 		height: 0;
 		overflow: hidden;
 	}
-	
 }
 
 @media (min-width: 1281px) {
@@ -47,7 +46,7 @@
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1280px) {	
+@media (min-width: 992px) and (max-width: 1280px) {
 	.video-responsive {
 		position: relative;
 		/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
@@ -164,6 +163,34 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	#imgText {
+		margin-top: 20px;
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	#imgText1 {
+		margin-top: 20px;
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	.btn-ecommerce {
+		background-color: #5cc9ba !important;
+		min-width: 180px !important;
+		height: 25px;
+		padding: 0 0px;
+		border-radius: 70px;
+		color: #fff;
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		-webkit-transition-duration: 500ms;
+		transition-duration: 500ms;
+		border: 0px;
+		z-index: 999;
+	}
+
 	.video-responsive {
 		position: relative;
 		/* padding-bottom: 56.25%;*/ /* 16/9 ratio */
@@ -247,7 +274,8 @@
 	.hero-slide-content .slide-img {
 		margin-top: 80px;
 		width: 320px;
-		height: 174px;
+		height: 250px;
+		/* height: 174px; */
 	}
 	.package {
 		width: 80%;
