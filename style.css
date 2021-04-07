@@ -556,10 +556,10 @@ img {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #5cc9ba !important;
+	color: #5cc9ba !important;
 }
 
-.navbar-light .navbar-toggler { 
+.navbar-light .navbar-toggler {
 	background-color: #f2f4f6;
 }
 
@@ -651,7 +651,7 @@ img {
 }
 
 .header_area.sticky .nav-link {
-	color: #F8F2C6 !important;
+	color: #f8f2c6 !important;
 }
 
 /* --------------------------
@@ -1930,8 +1930,9 @@ span.accor-open {
 	color: #292d4f;
 }
 
-.google-play-btn {
-	max-width: 20%;
+.google-play-btn {	
+	margin-top: 50px;
+	max-width: 40%;
 }
 
 .mosh {

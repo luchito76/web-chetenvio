@@ -223,6 +223,7 @@
 	});
 
 	$window.on('load', function() {
+		$('.menu_area #nav .nav-link').css('color', '#5cc9ba');	
 		$('.buscar-btn').addClass('buscar-btn');
 		$('#preloader').fadeOut('slow', function() {
 			$(this).remove();
