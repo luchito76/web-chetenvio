@@ -163,6 +163,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	.carousel-indicators { 
+		bottom: -40px !important;
+	}
+	.carousel-indicators .active {
+		background-color: #5cc9ba;
+	}
+	.carousel-inner > .carousel-item > img,
+	.carousel-inner > .carousel-item > a > img {
+		height: 185.63px;
+	}
 	#imgText {
 		margin-top: 20px;
 		font-size: 2rem;
