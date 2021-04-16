@@ -205,9 +205,9 @@ img {
 	padding-bottom: 70px;
 }
 
-.section_padding_0_50 {
-	padding-top: 0;
-	padding-bottom: 50px;
+.section_padding_50_0 {
+	padding-top: 50px;
+	padding-bottom: 0px;
 }
 
 .mt-15 {
@@ -1032,9 +1032,14 @@ img {
 }
 
 .cta-content .section-heading h2 {
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	color: #fff;
 	font-size: 44px;
+}
+.cta-content .section-heading h5 {
+	margin-bottom: 40px;
+	color: #fff;
+	font-size: 25px;
 }
 
 /* -------------------------
@@ -1930,7 +1935,7 @@ span.accor-open {
 	color: #292d4f;
 }
 
-.google-play-btn {	
+.google-play-btn {
 	margin-top: 50px;
 	max-width: 40%;
 }
@@ -2544,7 +2549,6 @@ video:focus {
 	outline: none;
 }
 
-
 /* /*********************** Video Servicios ******************************** */
 #video-container-servicios {
 	position: relative;
@@ -2609,6 +2613,71 @@ video:focus {
     width: 100%;
     height: 100%;
   } */
+
+.logo-mp {
+	background-color: #f8f2c6;
+	width: 160px;
+}
+
+.astrodivider {
+	margin: 64px auto;
+	/* width: 400px; */
+	max-width: 100%;
+	position: relative;
+}
+
+.astrodividermask {
+	overflow: hidden;
+	height: 20px;
+}
+
+.astrodividermask:after {
+	content: '';
+	display: block;
+	margin: -25px auto 0;
+	width: 100%;
+	height: 25px;
+	border-radius: 125px / 12px;
+	box-shadow: 0 0 8px #049372;
+}
+.astrodivider span {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 100%;
+	margin-bottom: -25px;
+	left: 50%;
+	margin-left: -25px;
+	border-radius: 100%;
+	box-shadow: 0 2px 4px #4fb39c;
+	background: #fff;
+}
+.astrodivider img {
+	position: absolute;
+	top: 8px;
+	bottom: 4px;
+	left: 0px;
+	right: 4px;
+	border-radius: 100%;
+	/* border: 1px dashed #68beaa; */
+	text-align: center;
+	line-height: 40px;
+	font-style: normal;
+	color: #049372;
+}
+/* .astrodivider i {
+	position: absolute;
+	top: 4px;
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	border-radius: 100%;
+	border: 1px dashed #68beaa;
+	text-align: center;
+	line-height: 40px;
+	font-style: normal;
+	color: #049372;
+} */
 /* --------------------------------
 ============= The End =============
 ---------------------------------*/
