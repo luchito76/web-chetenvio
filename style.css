@@ -458,6 +458,16 @@ img {
 	position: relative;
 	width: 100%;
 }
+#imgButton-demo {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin-right: -50%;
+	/* margin-top: 30px; */
+	top: 50%;
+	left: 50%;
+	color: #f8f2c6;
+	font-weight: 500;
+}
 #imgButton {
 	position: absolute;
 	transform: translate(-50%, -50%);
