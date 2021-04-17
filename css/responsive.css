@@ -163,6 +163,26 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+	#imgButton {
+		position: absolute;
+		transform: translate(-60%, -50%);
+		margin-right: -50%;
+		/* margin-top: 30px; */
+		top: 50%;
+		/* left: 35%; */
+		color: #f8f2c6;
+		font-weight: 500;
+	}
+	#imgButton-apple {
+		position: absolute;
+		transform: translate(-40%, -50%);
+		margin-right: -50%;
+		/* margin-top: 30px; */
+		top: 50%;
+		/* left: 65%; */
+		color: #f8f2c6;
+		font-weight: 500;
+	}
 	.carousel-indicators { 
 		bottom: -40px !important;
 	}
@@ -242,7 +262,7 @@
 	}
 	.google-play-btn {
 		margin-top: 110px;
-		max-width: 50%;
+		max-width: 30%;
 	}
 	.header_area {
 		padding: 0;
