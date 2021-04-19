@@ -194,14 +194,18 @@
 		height: 185.63px;
 	}
 	#imgText {
-		margin-top: 20px;
+		margin-top: 20px;		
 		font-size: 2rem;
 		font-weight: 600;
 	}
 	#imgText1 {
-		margin-top: 20px;
+		margin-top: 30px;
 		font-size: 1rem;
 		font-weight: 500;
+	}
+
+	#imgButton-demo {
+		margin-top: 60px;		
 	}
 
 	.btn-ecommerce {
