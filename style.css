@@ -2637,6 +2637,7 @@ video:focus {
 .logo-mp {
 	background-color: #f8f2c6;
 	width: 90px;
+	margin-top: 32px;
 }
 
 .astrodivider {
