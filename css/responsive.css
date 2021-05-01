@@ -163,27 +163,49 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-	#imgButton {
+	/* #imgButton {
 		position: absolute;
-		transform: translate(-60%, -50%);
+		transform: translate(-20%, -50%);
 		margin-right: -50%;
-		/* margin-top: 30px; */
-		top: 50%;
-		/* left: 35%; */
+		top: 50%;		
 		color: #f8f2c6;
 		font-weight: 500;
 	}
 	#imgButton-apple {
 		position: absolute;
-		transform: translate(-40%, -50%);
+		transform: translate(-5%, -50%);
 		margin-right: -50%;
-		/* margin-top: 30px; */
-		top: 50%;
-		/* left: 65%; */
+		top: 50%;		
 		color: #f8f2c6;
 		font-weight: 500;
+	} */
+
+
+	/* .buttons {
+		width: 960px;
+		margin: 0 auto;
+	} */
+	
+	.action_btn {
+		position: absolute;
+		transform: translate(-335%, -335%);
+	
+		display: inline-block;
+		width: calc(50% - 4px);
+		margin: 0 auto;
+		width: 130px;
 	}
-	.carousel-indicators { 
+	.action_btn1 {
+		position: absolute;
+		transform: translate(-235%, -335%);
+	
+		display: inline-block;
+		width: calc(50% - 4px);
+		margin: 0 auto;
+		width: 130px;
+	}
+
+	.carousel-indicators {
 		bottom: -40px !important;
 	}
 	.carousel-indicators .active {
@@ -194,7 +216,7 @@
 		height: 185.63px;
 	}
 	#imgText {
-		margin-top: 20px;		
+		margin-top: 20px;
 		font-size: 2rem;
 		font-weight: 600;
 	}
@@ -205,7 +227,7 @@
 	}
 
 	#imgButton-demo {
-		margin-top: 60px;		
+		margin-top: 60px;
 	}
 
 	.btn-ecommerce {
@@ -266,7 +288,7 @@
 	}
 	.google-play-btn {
 		margin-top: 110px;
-		max-width: 30%;
+		/* max-width: 30%; */
 	}
 	.header_area {
 		padding: 0;

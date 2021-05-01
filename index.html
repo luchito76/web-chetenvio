@@ -507,6 +507,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/active.js"></script>
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="js/floating-wpp.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -719,6 +721,18 @@
 
         });
 
+    </script>
+
+    <div id="myDiv"></div>
+    <script type="text/javascript">
+        $(function () {
+            $('#myDiv').floatingWhatsApp({
+                phone: '5491164828741',
+                popupMessage: 'Nos encanta que nos hayas conactado. Horario de atención de Lunes a Sábados de 9 a 18Hs. En qué podemos ayudarte?',
+                headerTitle: 'Bienvenido a ChetEnvío!',
+                showPopup: true
+            });
+        });
     </script>
 </body>
 
