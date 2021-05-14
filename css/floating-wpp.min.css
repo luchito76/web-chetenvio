@@ -73,14 +73,14 @@
 	justify-content: space-between;
 	cursor: pointer;
 }
-.floating-wpp .floating-wpp-input-message {
+/* .floating-wpp .floating-wpp-input-message {
 	background-color: #fff;
 	margin: 10px -15px -15px;
 	padding: 0 15px;
 	display: flex;
 	align-items: center;
-}
-.floating-wpp .floating-wpp-input-message textarea {
+} */
+/* .floating-wpp .floating-wpp-input-message textarea {
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-shadow: none;
@@ -96,4 +96,4 @@
 	margin-left: 12px;
 	font-size: 0;
 	cursor: pointer;
-}
+} */
