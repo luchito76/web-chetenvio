@@ -1493,6 +1493,9 @@ span.accor-open {
 	background-attachment: fixed;
 }
 
+.subscribe-newsletter-content {
+	margin-left: 15px;
+}
 .subscribe-newsletter-content p {
 	text-transform: uppercase;
 	font-size: 12px;
@@ -1511,10 +1514,10 @@ span.accor-open {
 }
 
 .subscribe-newsletter-content form > input {
-	width: 600px;
-	height: 55px;
+	width: 180px;
+	height: 25px;
 	border-radius: 70px;
-	border: none;
+	border: 1px solid #5cc9ba ;
 	padding: 0 30px;
 	font-style: italic;
 	font-size: 14px;
@@ -1522,11 +1525,11 @@ span.accor-open {
 }
 
 .subscribe-newsletter-content form > button {
-	width: 150px;
-	height: 55px;
+	/* width: 20px; */
+	height: 25px;
 	border-radius: 0 70px 70px 0;
 	border: none;
-	padding: 0 30px;
+	padding: 0 10px 0px;
 	font-size: 14px;
 	color: #fff;
 	background-color: #4a7aec;

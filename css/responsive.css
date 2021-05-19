@@ -22,9 +22,9 @@
 }
 
 @media (min-width: 1281px) {
-	.subscribe-newsletter-content form > input {
+	/* .subscribe-newsletter-content form > input {
 		width: 600px;
-	}
+	} */
 }
 
 @media (min-width: 1200px) {
@@ -37,13 +37,13 @@
 		left: 40%;
 		transform: translate(-50%, -50%);
 	}
-	.subscribe-newsletter-content form > input {
-		width: 400px;
+	/* .subscribe-newsletter-content form > input {
+		width: 240px;
 	}
 	.subscribe-newsletter-content form > button {
 		width: 80px;
 		padding: 0 10px;
-	}
+	} */
 }
 
 @media (min-width: 992px) and (max-width: 1280px) {
@@ -63,13 +63,13 @@
 		left: 40%;
 		transform: translate(-50%, -50%);
 	}
-	.subscribe-newsletter-content form > input {
+	/* .subscribe-newsletter-content form > input {
 		width: 400px;
 	}
 	.subscribe-newsletter-content form > button {
 		width: 80px;
 		padding: 0 10px;
-	}
+	} */
 	.search-button > a {
 		margin: 0 40px;
 	}
@@ -426,14 +426,14 @@
 	.subscribe-newsletter-content h2 {
 		font-size: 24px;
 	}
-	.subscribe-newsletter-content form > input {
+	/* .subscribe-newsletter-content form > input {
 		width: 300px !important;
 	}
 	.subscribe-newsletter-content form > button {
 		width: 120px !important;
 		padding: 0 15px;
 		right: 0;
-	}
+	} */
 	.testimonials-slides .owl-prev {
 		left: -10px;
 	}
@@ -522,13 +522,13 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-	.subscribe-newsletter-content form > input {
+	/* .subscribe-newsletter-content form > input {
 		width: 300px;
 	}
 	.subscribe-newsletter-content form > button {
 		width: 80px;
 		padding: 0 10px;
-	}
+	} */
 	#sidebar ul li a:before {
 		content: "Email: ";
 		font-style: italic;
