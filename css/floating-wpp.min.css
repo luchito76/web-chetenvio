@@ -73,13 +73,13 @@
 	justify-content: space-between;
 	cursor: pointer;
 }
-/* .floating-wpp .floating-wpp-input-message {
+ .floating-wpp .floating-wpp-input-message {
 	background-color: #fff;
 	margin: 10px -15px -15px;
 	padding: 0 15px;
 	display: flex;
 	align-items: center;
-} */
+} 
 /* .floating-wpp .floating-wpp-input-message textarea {
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -91,9 +91,10 @@
 	font-family: inherit;
 	font-size: inherit;
 	resize: none;
-}
+}*/
 .floating-wpp .floating-wpp-btn-send {
 	margin-left: 12px;
+	margin-top: 12px;
 	font-size: 0;
 	cursor: pointer;
-} */
+} 
