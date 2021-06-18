@@ -61,15 +61,17 @@
                                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                                     <li><a class="btn-core" target="_blank" href="https://core.chetenvio.com/">Zona
                                             Clientes</a></li>
-                                    <li>
-                                        <div class=" subscribe-newsletter-content wow fadeIn" data-wow-delay="0.5s">
+
+                                    <!-- Habilitar cuando se suba todo del core -->
+                                    <!-- <li>
+                                        <div class="subscribe-newsletter-content wow fadeIn" data-wow-delay="0.5s">
                                             <form action="#">
                                                 <input id="nroSeguimiento" placeholder="N° Envío">
-                                                <button id="btnSeguimiento" class="buscar-btn" type="submit"><i
-                                                        class="fa fa-search"></i></button>
+                                                <a id="btnSeguimiento" href="http://localhost:4200/seguimiento"
+                                                    class="buscar-btn"><i class="fa fa-search"></i></a>
                                             </form>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </nav>
@@ -223,7 +225,6 @@
             data-wow-delay="0.1s">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <!-- <div class="col-12 col-md-11 col-lg-9 col-xl-7"> -->
                     <div class="col-12 ">
                         <div class="few-words-text">
                             <div class="section-heading">
@@ -310,7 +311,6 @@
                 <div class="col-12 col-md-12 contact-form-area text-center wow fadeIn" data-wow-delay="0.5s">
                     <div class="section-heading">
                         <h2>DESCARGÁ NUESTRA APP</h2>
-                        <!-- <h5>Podés hacer y seguir tus envíos desde tu celular!</h5> -->
                     </div>
                 </div>
                 <div class="col-6 col-md-6">
@@ -513,7 +513,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/active.js"></script>
-    <!--Floating WhatsApp javascript-->
     <script type="text/javascript" src="js/floating-wpp.min.js"></script>
 
     <script>
@@ -522,6 +521,11 @@
             $('#msgSubmit').hide();
             $('#loadMsg').hide();
             $('#inTurnFadingTextG').hide();
+
+            document.getElementById("btnSeguimiento").onclick = function (e) {
+                e.preventDefault();
+                window.open(this.href + "/" + $("#nroSeguimiento").val(), '_blank');
+            }
         });
 
         $('.navbar-collapse a').click(function () {
@@ -533,33 +537,6 @@
             event.preventDefault();
             submitForm();
         });
-
-        $("#btnSeguimiento").click(function (event) {
-            event.preventDefault();
-            submitNroSeguimiento();
-        });
-
-        function submitNroSeguimiento() {            
-            $.ajax({
-                type: "GET",
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                url: 'https://core.chetenvio.com/auth/login',
-                dataType: "json",
-                crossDomain: "true",
-                contentType: "application/json; charset=utf-8",
-                // data: { nroSeguimiento: $("#nroSeguimiento").val() },
-
-                success: function (res) {
-                    alert("Bienn")
-                    document.getElementById("nroSeguimiento").reset();
-                },
-                error: function () {
-                    // show an error message                        
-                }
-            });
-        }
 
         function submitForm() {
             const constraints = {

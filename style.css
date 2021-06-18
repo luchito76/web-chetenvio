@@ -1517,11 +1517,11 @@ span.accor-open {
 	width: 180px;
 	height: 25px;
 	border-radius: 70px;
-	border: 1px solid #5cc9ba ;
+	border: 1px solid #5cc9ba;
 	padding: 0 30px;
 	font-style: italic;
 	font-size: 14px;
-	color: #abadbe;
+	color: #171718;
 }
 
 .subscribe-newsletter-content form > button {
@@ -2290,10 +2290,12 @@ hr {
 }
 
 .buscar-btn {
-	background-color: #5cc9ba !important;
+	margin-left: -25px !important;
+	/* background-color: #fdf8e1 !important; */
 }
 .buscar-btn-sticky {
-	background-color: #fdf8e1 !important;
+	
+	/* background-color: #fdf8e1 !important; */
 	color: #5cc9ba !important;
 }
 
