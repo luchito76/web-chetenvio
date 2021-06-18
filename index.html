@@ -64,8 +64,8 @@
                                     <li>
                                         <div class=" subscribe-newsletter-content wow fadeIn" data-wow-delay="0.5s">
                                             <form action="#">
-                                                <input name="seg" placeholder="N° Envío" >
-                                                <button class="buscar-btn" type="submit"><i
+                                                <input id="nroSeguimiento" placeholder="N° Envío">
+                                                <button id="btnSeguimiento" class="buscar-btn" type="submit"><i
                                                         class="fa fa-search"></i></button>
                                             </form>
                                         </div>
@@ -533,6 +533,33 @@
             event.preventDefault();
             submitForm();
         });
+
+        $("#btnSeguimiento").click(function (event) {
+            event.preventDefault();
+            submitNroSeguimiento();
+        });
+
+        function submitNroSeguimiento() {            
+            $.ajax({
+                type: "GET",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                url: 'http://localhost:4200/seguimiento/1623891320812',
+                dataType: "json",
+                crossDomain: "true",
+                contentType: "application/json; charset=utf-8",
+                // data: { nroSeguimiento: $("#nroSeguimiento").val() },
+
+                success: function (res) {
+                    alert("Bienn")
+                    document.getElementById("nroSeguimiento").reset();
+                },
+                error: function () {
+                    // show an error message                        
+                }
+            });
+        }
 
         function submitForm() {
             const constraints = {
