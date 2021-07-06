@@ -249,7 +249,7 @@
 
 	.action_btn {
 		position : absolute;
-		transform: translate(-290%, -335%);
+		transform: translate(-305%, -335%);
 
 		display: inline-block;
 		width  : calc(50% - 4px);
@@ -259,7 +259,7 @@
 
 	.action_btn1 {
 		position : absolute;
-		transform: translate(-165%, -335%);
+		transform: translate(-190%, -335%);
 
 		display: inline-block;
 		width  : calc(50% - 4px);
