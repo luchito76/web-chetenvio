@@ -4,8 +4,8 @@
 	if ($.fn.owlCarousel) {
 		$('.hero-slides').owlCarousel({
 			items: 1,
-			loop: true,
-			autoplay: true,
+			loop: false,
+			autoplay: false,
 			smartSpeed: 800,
 			margin: 0,
 			dots: false,
